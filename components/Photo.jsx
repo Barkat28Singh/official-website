@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Image } from "next/image";
+import Image from "next/image";
 export const Photo = () => {
   return (
     <div className="w-full h-full relative">
@@ -22,7 +22,7 @@ export const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="../public/assets/Linkedin_photo.png"
+            src="/assets/Linkedin_photo.png"
             priority
             quality={100}
             fill
