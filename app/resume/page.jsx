@@ -24,11 +24,11 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "/components/ui/tabs";
 
 import {
-  ToolTip,
+  Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "components/ui/tabs";
+} from "/components/ui/tooltip";
 
 import { ScrollArea } from "/components/ui/scroll-area";
 import { motion } from "framer-motion";
@@ -216,21 +216,21 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea classname="h-[400px]">
+                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          classname="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 classname="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[60px] h-[6px] rounded-full bg-accent">
-                              <p classname="text-white/60">{item.company}</p>
+                              <p className="text-white/60">{item.company}</p>
                             </span>
                           </div>
                         </li>
@@ -247,30 +247,28 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea classname="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {education.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          classname="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 classname="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[60px] h-[6px] rounded-full bg-accent">
-                              <p classname="text-white/60">
-                                {item.institution}
-                              </p>
-                            </span>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
+                {/* <ScrollArea className="h-[400px]"> */}
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {education.items.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          {item.degree}
+                        </h3>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[60px] h-[6px] rounded-full bg-accent">
+                            <p className="text-white/60">{item.institution}</p>
+                          </span>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+                {/* </ScrollArea> */}
               </div>
             </TabsContent>
             {/* skills */}
@@ -288,12 +286,12 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        classname="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
                         <TooltipProvider delay-duration={100}>
                           <Tooltip>
-                            <TooltipTrigger classname="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center-group">
-                              <div classname="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center-group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
@@ -323,10 +321,10 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        classname="flex justify-center items-center xl:justify-start gap-4"
+                        className="flex justify-center items-center xl:justify-start gap-4"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
-                        <span classname="text-xl">{item.fieldValue}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
                   })}
