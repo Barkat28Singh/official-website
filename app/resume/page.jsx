@@ -1,6 +1,5 @@
 "use client";
 
-import { Description } from "@radix-ui/react-dialog";
 import {
   FaCss3,
   FaJs,

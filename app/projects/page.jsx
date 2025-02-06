@@ -180,7 +180,7 @@ const Projects = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight classname="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live Project</p>
@@ -193,7 +193,7 @@ const Projects = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub classname="text-white text-3xl group-hover:text-accent"></BsGithub>
+                        <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github Repository</p>
@@ -208,7 +208,7 @@ const Projects = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              classname="zl:h[-520px] mb-12"
+              className="zl:h[-520px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
