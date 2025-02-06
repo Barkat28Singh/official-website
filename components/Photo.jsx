@@ -19,31 +19,31 @@ export const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-full h-full mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/Linkedin_photo.png"
+            src="/assets/Images/Profile.jpg"
             priority
             quality={100}
             fill
-            alt=""
-            className="object-contain"
+            alt="Profile picture"
+            className="object-contain "
           ></Image>
         </motion.div>
         {/* Circle */}
 
         <motion.svg
-          className="w-[300px] xl:w=[506px] h-[300px] xl:h-[506px]"
+          className="w-[400px] h-[400px]"
           fill="transparent"
-          viewBox="0 0 506 506"
+          viewBox="0 0 500 400"
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
-            strokeWidth="4"
+            stroke="#b179b5"
+            strokeWidth="12"
             strokeLinecap="round"
             initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
