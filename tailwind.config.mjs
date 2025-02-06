@@ -24,10 +24,10 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#1c1c22",
+        primary: "#160a17",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#b174b5",
+          hover: "#b179b5",
         },
       },
       // colors: {
@@ -81,4 +81,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 };
-
