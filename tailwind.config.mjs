@@ -1,4 +1,4 @@
-import { JetBrains_Mono } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -21,7 +21,7 @@ export default {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrains-mono)",
+      primary: "var(--font-josefin-sans)",
     },
     extend: {
       colors: {
