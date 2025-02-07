@@ -3,6 +3,7 @@
 import { Button } from "/components/ui/button";
 import { Textarea } from "/components/ui/textarea";
 import { Input } from "/components/ui/input";
+import Link from "next/link";
 
 import {
   Select,
@@ -87,9 +88,14 @@ const Contact = () => {
                 placeholder="Anything else you want to mention? Type here..."
               ></Textarea>
               {/* Submit Btn */}
-              <Button size="md" className="max-w-40">
-                Submit Form
-              </Button>
+              <Link
+                href="/ThankYou"
+                className="flex items-center justify-center"
+              >
+                <Button size="lg" className="p-5 flex ">
+                  Submit Form
+                </Button>
+              </Link>
             </form>
           </div>
           {/* information  section */}

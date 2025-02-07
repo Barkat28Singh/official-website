@@ -3,10 +3,16 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaBehance, FaDiscord } from "react-icons/fa";
 
 const socials = [
-  { icons: <FaGithub></FaGithub>, path: "" },
-  { icons: <FaLinkedinIn></FaLinkedinIn>, path: "" },
-  { icons: <FaBehance></FaBehance>, path: "" },
-  { icons: <FaDiscord></FaDiscord>, path: "" },
+  { icons: <FaGithub></FaGithub>, path: "https://github.com/Barkat28Singh" },
+  {
+    icons: <FaLinkedinIn></FaLinkedinIn>,
+    path: "https://www.linkedin.com/in/barkat-singh-uoft/",
+  },
+  {
+    icons: <FaBehance></FaBehance>,
+    path: "https://www.behance.net/Barkat1213singh",
+  },
+  { icons: <FaDiscord></FaDiscord>, path: "https://discord.com/users/Kat_01" },
 ];
 
 export const Social = () => {
