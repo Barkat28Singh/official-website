@@ -30,7 +30,7 @@ const Home = () => {
               >
                 <Button
                   variant="outline"
-                  size="xl"
+                  size="lg"
                   className="uppercase flex items-center gap-2 text-white hover:text-black"
                 >
                   <span>Download Resumé</span>
