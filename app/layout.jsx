@@ -17,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${josefin_Sans.variable}`}>
+      <body
+        data-gr-c-s-loaded
+        attribute="true"
+        className={`${josefin_Sans.variable}`}
+      >
         <Header></Header>
         <StairTransition></StairTransition>
         <PageTransition> {children}</PageTransition>
