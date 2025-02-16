@@ -9,28 +9,28 @@ const services = [
     num: "01",
     title: "Web development",
     description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est quo expedita tempore modi alias consequuntur facere ea aliquid ipsam assumenda, ex magnam laboriosam. Asperiores distinctio ullam nihil corrupti eum.`,
+    I offer end-to-end web development services, building responsive, user-friendly websites and full-stack applications using technologies like HTML/CSS, JavaScript, Node.js, and React. From concept to deployment, I ensure seamless functionality and modern design.`,
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est quo expedita tempore modi alias consequuntur facere ea aliquid ipsam assumenda, ex magnam laboriosam. Asperiores distinctio ullam nihil corrupti eum.`,
+    I create intuitive and engaging user experiences through wireframing, prototyping, and responsive design using Figma, Adobe XD, and Illustrator. My focus is on user-centered designs that enhance usability and aesthetic appeal.`,
     href: "",
   },
   {
     num: "03",
     title: "Logo Design",
     description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est quo expedita tempore modi alias consequuntur facere ea aliquid ipsam assumenda, ex magnam laboriosam. Asperiores distinctio ullam nihil corrupti eum.`,
+    I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
     href: "",
   },
   {
     num: "04",
     title: "Advertisment & Marketing",
     description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est quo expedita tempore modi alias consequuntur facere ea aliquid ipsam assumenda, ex magnam laboriosam. Asperiores distinctio ullam nihil corrupti eum.`,
+   I craft compelling advertisements, social media content, and marketing materials using Adobe Creative Suite. My designs aim to boost engagement, drive traffic, and enhance your brand’s visibility across platforms.`,
     href: "",
   },
 ];
