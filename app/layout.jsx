@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
       <body
         data-gr-c-s-loaded
         attribute="true"
+        cz-shortcut-listen="true"
         className={`${josefin_Sans.variable}`}
       >
         <Header></Header>
