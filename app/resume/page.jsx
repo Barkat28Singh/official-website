@@ -99,16 +99,16 @@ const experience = {
       position: "Administrative Assistant",
       duration: "2021-2022",
     },
-    {
-      company: "Open Design Collaboratory",
-      position: "Creative Director",
-      duration: "2023-2024",
-    },
-    {
-      company: "Hydro Bag & Satch",
-      position: "Product Designer",
-      duration: "2024-2024",
-    },
+    // {
+    //   company: "Open Design Collaboratory",
+    //   position: "Creative Director",
+    //   duration: "2023-2024",
+    // },
+    // {
+    //   company: "Hydro Bag & Satch",
+    //   position: "Product Designer",
+    //   duration: "2024-2024",
+    // },
   ],
 };
 

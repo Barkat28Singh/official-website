@@ -24,7 +24,7 @@ const services = [
     title: "Logo Design",
     description: `
     I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
-    href: "",
+    href: "/logos",
   },
   {
     num: "04",
