@@ -84,18 +84,7 @@ const Designs = () => {
               </h2>
               {/* project description */}
               <p className="text-white/60">{design.description}</p>
-              <ul className="flex gap-4">
-                {/* project stack */}
-                {designs.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {item.name}
-                      {/* remove last comma */}
-                      {index !== design.length - 1 && ","}
-                    </li>
-                  );
-                })}
-              </ul>
+
               {/* border */}
               <div className="border border-white/20"></div>
               {/* buttons */}
@@ -116,7 +105,7 @@ const Designs = () => {
               {designs.map((design, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none pr-5">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-fullh-full bg-black/10 z-10"></div>
                       {/* image */}
@@ -124,8 +113,8 @@ const Designs = () => {
                         <Image
                           src={design.image}
                           fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-cover"
+                          sizes=""
+                          className="object-contain"
                           alt="design images"
                         ></Image>
                       </div>
@@ -134,10 +123,12 @@ const Designs = () => {
                 );
               })}
               {/* buttons */}
-              <ProjSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl: justify-none"
-                btnStyles="bg-accent hover:bg-accent text-primary text-[22px] w-[44px] flex justify-center items-center transition-all"
-              ></ProjSliderBtns>
+              <div className=" h-full flex justify-center items-center mt-2">
+                <ProjSliderBtns
+                  containerStyles="flex gap-2 w-full justify-between xl:w-max xl: justify-none"
+                  btnStyles="bg-accent hover:bg-accent text-primary text-[22px] w-[44px] flex justify-center items-center transition-all"
+                ></ProjSliderBtns>
+              </div>
             </Swiper>
           </div>
         </div>
