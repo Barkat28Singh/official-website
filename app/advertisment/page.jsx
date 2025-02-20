@@ -1,9 +1,18 @@
 "use client";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "/components/ui/tooltip";
+
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import ReactPlayer from "react-player";
 
 import "swiper/css";
 
@@ -14,60 +23,60 @@ import ProjSliderBtns from "/components/ProjSliderBtns";
 const advertisments = [
   {
     num: "01",
-    title: "Cherry Closet Logo",
+    title: "Sweet Teeth GIF",
     description:
       "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
-    image: "/assets/Logos/logo1.png",
+    image: "/assets/Ads/Sweet_Teeth_GIF.gif",
   },
   {
     num: "02",
-    title: "BS Logos (Blue & Orange Variants)",
+    title: "Sneak Attax Promotion GIF",
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-    image: "/assets/Logos/logo2.png",
+    image: "/assets/Ads/anim.gif",
+  },
+  {
+    num: "02",
+    title: "HydroBag-Product Design Pitch",
+    description:
+      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+    image: "/assets/Ads/pr.png",
+  },
+  {
+    num: "02",
+    title: "HydroSatch-Product Design Pitch",
+    description:
+      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+    image: "/assets/Ads/product2.png",
+  },
+  {
+    num: "02",
+    title: "SweetScape-Character Game Design Pitch",
+    description:
+      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+    image: "/assets/Ads/pitchprop.png",
   },
 
   {
     num: "03",
-    title: "BS Monogram Logo (Black & White)",
+    title: "Sweet Teeth Advertisment ",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
-    image: "/assets/Logos/logo3.png",
+    video: "/assets/Ads/stad.mp4",
   },
   {
     num: "04",
-    title: " BS Monogram with Geometric Background (Colorful Variant)",
+    title: "Heart of A Lion-Motion Design Action Video ",
     description:
-      "This vibrant version of the BS monogram uses a bold palette of orange, magenta, deep purple, and red. The geometric background retains the triangular layering, adding dimension, while the bright orange backdrop injects energy and warmth. The interplay of magenta outlines and purple typography brings a modern, creative touch, making it ideal for brands in fashion, media, or the creative arts seeking to make a bold, dynamic statement.",
-    image: "/assets/Logos/logo7.png",
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    video: "/assets/Ads/lion.mp4",
   },
   {
     num: "05",
-    title: "BS Monogram with Geometric Background (Black & Gray Variant)",
+    title: "Happy-Motion Design Lyric Video ",
     description:
-      "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
-    image: "/assets/Logos/logo8.png",
-  },
-  {
-    num: "06",
-    title: "Initials IA Logo",
-    description:
-      "The IA logo showcases a bold, geometric design with sharp angles and a modern sans-serif font. The overlapping navy and royal blue colors create depth and dimension, giving the logo a dynamic and forward-moving feel. Its clean and structured form suggests professionalism, reliability, and innovation, making it ideal for tech, engineering, or corporate industries.",
-    image: "/assets/Logos/logo4.png",
-  },
-  {
-    num: "07",
-    title: "Initials GS",
-    description:
-      "The GS logo uses large, interlocking letters within a brown circular backdrop. The earthy brown paired with a soft green foreground conveys an organic, grounded aesthetic. This overlapping design adds visual interest while maintaining legibility, making it suitable for brands associated with sustainability, nature, or community-driven initiatives.",
-    image: "/assets/Logos/logo5.png",
-  },
-  {
-    num: "08",
-    title: "Captain's 18",
-    description:
-      "This vibrant logo combines text and illustrative elements to represent a golf-themed brand. The red flag on a green putting surface with flowing blue water shapes suggests movement and leisure. The gradient ring border adds a modern touch with calming blue and warm orange tones. Overall, the design feels fresh, sporty, and welcoming—perfect for golf clubs or tournaments.",
-    image: "/assets/Logos/logo6.png",
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    video: "/assets/Ads/happy.mp4",
   },
 ];
 
@@ -105,6 +114,13 @@ const Advertisments = () => {
               </h2>
               {/* project description */}
               <p className="text-white/60">{advertisment.description}</p>
+              <TooltipProvider delay-duration={100}>
+                <Tooltip>
+                  <div className="text-4xl flex duration-300">
+                    {advertisment.icon}
+                  </div>
+                </Tooltip>
+              </TooltipProvider>
 
               {/* border */}
               <div className="border border-white/20"></div>
@@ -128,16 +144,34 @@ const Advertisments = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center">
                       {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-fullh-full bg-black/10 z-10"></div>
-                      {/* image */}
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={advertisment.image}
-                          fill
-                          sizes=""
-                          className="object-contain"
-                          alt="advertisment images"
-                        ></Image>
+                      {/* <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div> */}
+
+                      {/* Conditional Rendering */}
+                      <div className=" w-full h-full">
+                        {advertisment.image ? (
+                          <Image
+                            src={advertisment.image}
+                            fill
+                            loop
+                            className="object-contain"
+                            alt="advertisement image"
+                          />
+                        ) : advertisment.video ? (
+                          <ReactPlayer
+                            url={advertisment.video}
+                            controls
+                            width="100%"
+                            height="100%"
+                            style={{
+                              objectFit: "contain",
+                              pointerEvents: "auto",
+                            }}
+                          />
+                        ) : (
+                          <p className="text-white text-center">
+                            No media available
+                          </p>
+                        )}
                       </div>
                     </div>
                   </SwiperSlide>

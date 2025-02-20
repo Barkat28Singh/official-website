@@ -11,6 +11,7 @@ const services = [
     description: `
     I offer end-to-end web development services, building responsive, user-friendly websites and full-stack applications using technologies like HTML/CSS, JavaScript, Node.js, and React. From concept to deployment, I ensure seamless functionality and modern design.`,
     href: "/web",
+    
   },
   {
     num: "02",
@@ -65,6 +66,9 @@ const Services = () => {
                     <BsArrowDownRight className="text-primary text-3xl "></BsArrowDownRight>
                   </Link>
                 </div>
+                <span className=" flex text-[13px] leading-none text-white group-hover:text-accent transition-all duration-500 justify-end h-0 ">
+                  Have A Peek!
+                </span>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>

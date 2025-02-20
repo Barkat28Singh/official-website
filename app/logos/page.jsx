@@ -1,5 +1,12 @@
 "use client";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "/components/ui/tooltip";
+
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
@@ -10,6 +17,7 @@ import "swiper/css";
 import Image from "next/image";
 
 import ProjSliderBtns from "/components/ProjSliderBtns";
+import { SiAdobephotoshop, SiAdobexd } from "react-icons/si";
 
 const logos = [
   {
@@ -18,6 +26,7 @@ const logos = [
     description:
       "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
     image: "/assets/Logos/logo1.png",
+    icon: <SiAdobexd></SiAdobexd>,
   },
   {
     num: "02",
@@ -25,6 +34,7 @@ const logos = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Logos/logo2.png",
+    icon: <SiAdobexd></SiAdobexd>,
   },
 
   {
@@ -33,6 +43,7 @@ const logos = [
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     image: "/assets/Logos/logo3.png",
+    icon: <SiAdobexd></SiAdobexd>,
   },
   {
     num: "04",
@@ -40,6 +51,7 @@ const logos = [
     description:
       "This vibrant version of the BS monogram uses a bold palette of orange, magenta, deep purple, and red. The geometric background retains the triangular layering, adding dimension, while the bright orange backdrop injects energy and warmth. The interplay of magenta outlines and purple typography brings a modern, creative touch, making it ideal for brands in fashion, media, or the creative arts seeking to make a bold, dynamic statement.",
     image: "/assets/Logos/logo7.png",
+    icon: <SiAdobexd></SiAdobexd>,
   },
   {
     num: "05",
@@ -47,6 +59,7 @@ const logos = [
     description:
       "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
     image: "/assets/Logos/logo8.png",
+    icon: <SiAdobexd></SiAdobexd>,
   },
   {
     num: "06",
@@ -54,6 +67,7 @@ const logos = [
     description:
       "The IA logo showcases a bold, geometric design with sharp angles and a modern sans-serif font. The overlapping navy and royal blue colors create depth and dimension, giving the logo a dynamic and forward-moving feel. Its clean and structured form suggests professionalism, reliability, and innovation, making it ideal for tech, engineering, or corporate industries.",
     image: "/assets/Logos/logo4.png",
+    icon: <SiAdobephotoshop></SiAdobephotoshop>,
   },
   {
     num: "07",
@@ -61,6 +75,7 @@ const logos = [
     description:
       "The GS logo uses large, interlocking letters within a brown circular backdrop. The earthy brown paired with a soft green foreground conveys an organic, grounded aesthetic. This overlapping design adds visual interest while maintaining legibility, making it suitable for brands associated with sustainability, nature, or community-driven initiatives.",
     image: "/assets/Logos/logo5.png",
+    icon: <SiAdobephotoshop></SiAdobephotoshop>,
   },
   {
     num: "08",
@@ -68,6 +83,7 @@ const logos = [
     description:
       "This vibrant logo combines text and illustrative elements to represent a golf-themed brand. The red flag on a green putting surface with flowing blue water shapes suggests movement and leisure. The gradient ring border adds a modern touch with calming blue and warm orange tones. Overall, the design feels fresh, sporty, and welcoming—perfect for golf clubs or tournaments.",
     image: "/assets/Logos/logo6.png",
+    icon: <SiAdobephotoshop></SiAdobephotoshop>,
   },
 ];
 
@@ -105,6 +121,11 @@ const Logos = () => {
               </h2>
               {/* project description */}
               <p className="text-white/60">{logo.description}</p>
+              <TooltipProvider delay-duration={100}>
+                <Tooltip>
+                  <div className="text-4xl duration-300">{logo.icon}</div>
+                </Tooltip>
+              </TooltipProvider>
 
               {/* border */}
               <div className="border border-white/20"></div>
