@@ -1,9 +1,11 @@
 "use client";
+import Link from "next/link";
+import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import {
   Tooltip,
-  TooltipContent,
   TooltipProvider,
+  TooltipContent,
   TooltipTrigger,
 } from "/components/ui/tooltip";
 
@@ -18,13 +20,16 @@ import Image from "next/image";
 
 import ProjSliderBtns from "/components/ProjSliderBtns";
 import {
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobexd,
+  SiCss3,
+  SiEjs,
+  SiFirebase,
   SiJavascript,
   SiJquery,
+  SiMysql,
+  SiGit,
+  SiNodedotjs,
 } from "react-icons/si";
-import { FaBootstrap, FaHtml5 } from "react-icons/fa";
+import { FaBootstrap, FaHtml5, FaWix, FaWordpress } from "react-icons/fa";
 
 const webworks = [
   {
@@ -34,14 +39,12 @@ const webworks = [
       "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
     image: "/assets/Web/sweet.png",
     icon: [
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobephotoshop></SiAdobephotoshop>,
-      <SiAdobexd></SiAdobexd>,
       <FaHtml5></FaHtml5>,
       <FaBootstrap></FaBootstrap>,
       <SiJquery></SiJquery>,
       <SiJavascript></SiJavascript>,
     ],
+   
   },
   {
     num: "02",
@@ -49,7 +52,14 @@ const webworks = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Web/film.png",
-    icon: [<SiAdobexd></SiAdobexd>, <SiAdobephotoshop></SiAdobephotoshop>],
+    icon: [
+      <FaHtml5></FaHtml5>,
+      <SiCss3></SiCss3>,
+      <SiJavascript></SiJavascript>,
+      <SiNodedotjs></SiNodedotjs>,
+      <SiEjs></SiEjs>,
+    ],
+   
   },
 
   {
@@ -58,7 +68,13 @@ const webworks = [
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     image: "/assets/Web/recipe.png",
-    icon: [<SiAdobexd></SiAdobexd>, <SiAdobephotoshop></SiAdobephotoshop>],
+    icon: [
+      <SiJavascript></SiJavascript>,
+      <SiMysql></SiMysql>,
+      <SiNodedotjs></SiNodedotjs>,
+      ,
+    ],
+   
   },
   {
     num: "04",
@@ -66,7 +82,12 @@ const webworks = [
     description:
       "This vibrant version of the BS monogram uses a bold palette of orange, magenta, deep purple, and red. The geometric background retains the triangular layering, adding dimension, while the bright orange backdrop injects energy and warmth. The interplay of magenta outlines and purple typography brings a modern, creative touch, making it ideal for brands in fashion, media, or the creative arts seeking to make a bold, dynamic statement.",
     image: "/assets/Web/butterfly.png",
-    icon: [<SiAdobexd></SiAdobexd>, <SiAdobephotoshop></SiAdobephotoshop>],
+    icon: [
+      <SiJavascript></SiJavascript>,
+      <SiNodedotjs></SiNodedotjs>,
+      <SiFirebase></SiFirebase>,
+    ],
+    
   },
   {
     num: "05",
@@ -74,7 +95,8 @@ const webworks = [
     description:
       "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
     image: "/assets/Web/odc.png",
-    icon: [<SiAdobexd></SiAdobexd>, <SiAdobephotoshop></SiAdobephotoshop>],
+    icon: [<FaWix></FaWix>, <FaHtml5></FaHtml5>, <SiCss3></SiCss3>],
+   
   },
 ];
 
@@ -114,7 +136,9 @@ const Webworks = () => {
               <p className="text-white/60">{webwork.description}</p>
               <TooltipProvider delay-duration={100}>
                 <Tooltip>
-                  <div className="text-4xl duration-300">{webwork.icon}</div>
+                  <div className="text-4xl flex duration-300">
+                    {webwork.icon}
+                  </div>
                 </Tooltip>
               </TooltipProvider>
 

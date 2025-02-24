@@ -183,7 +183,7 @@ const Projects = () => {
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live Project</p>
+                        <p>See More</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -201,6 +201,7 @@ const Projects = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                
               </div>
             </div>
           </div>

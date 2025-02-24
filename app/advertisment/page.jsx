@@ -1,9 +1,12 @@
 "use client";
 
+import Link from "next/link";
+import { BsArrowUpRight } from "react-icons/bs";
+
 import {
   Tooltip,
-  TooltipContent,
   TooltipProvider,
+  TooltipContent,
   TooltipTrigger,
 } from "/components/ui/tooltip";
 
@@ -19,6 +22,16 @@ import "swiper/css";
 import Image from "next/image";
 
 import ProjSliderBtns from "/components/ProjSliderBtns";
+import {
+  SiAdobeillustrator,
+  SiAdobexd,
+  SiAdobephotoshop,
+  SiAdobeindesign,
+  SiAdobeaftereffects,
+  SiAutodeskmaya,
+  SiUnity,
+  SiCanva,
+} from "react-icons/si";
 
 const advertisments = [
   {
@@ -27,6 +40,7 @@ const advertisments = [
     description:
       "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
     image: "/assets/Ads/Sweet_Teeth_GIF.gif",
+    icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
   },
   {
     num: "02",
@@ -34,6 +48,7 @@ const advertisments = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Ads/anim.gif",
+    icon: [<SiAdobephotoshop></SiAdobephotoshop>],
   },
   {
     num: "02",
@@ -41,6 +56,11 @@ const advertisments = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Ads/pr.png",
+    icon: [
+      <SiAdobeindesign></SiAdobeindesign>,
+      <SiAdobeillustrator></SiAdobeillustrator>,
+      <SiAdobephotoshop></SiAdobephotoshop>,
+    ],
   },
   {
     num: "02",
@@ -48,6 +68,11 @@ const advertisments = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Ads/product2.png",
+    icon: [
+      <SiAdobeindesign></SiAdobeindesign>,
+      <SiAdobeillustrator></SiAdobeillustrator>,
+      <SiAdobephotoshop></SiAdobephotoshop>,
+    ],
   },
   {
     num: "02",
@@ -55,6 +80,13 @@ const advertisments = [
     description:
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Ads/pitchprop.png",
+    icon: [
+      <SiAutodeskmaya></SiAutodeskmaya>,
+      <SiUnity></SiUnity>,
+      <SiAdobeindesign></SiAdobeindesign>,
+      <SiAdobeillustrator></SiAdobeillustrator>,
+      <SiAdobephotoshop></SiAdobephotoshop>,
+    ],
   },
 
   {
@@ -63,6 +95,10 @@ const advertisments = [
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     video: "/assets/Ads/stad.mp4",
+    icon: [
+      <SiAdobeillustrator></SiAdobeillustrator>,
+      <SiAdobeaftereffects></SiAdobeaftereffects>,
+    ],
   },
   {
     num: "04",
@@ -70,6 +106,10 @@ const advertisments = [
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     video: "/assets/Ads/lion.mp4",
+    icon: [
+      <SiAdobeaftereffects></SiAdobeaftereffects>,
+      <SiAdobephotoshop></SiAdobephotoshop>,
+    ],
   },
   {
     num: "05",
@@ -77,6 +117,35 @@ const advertisments = [
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     video: "/assets/Ads/happy.mp4",
+    icon: [
+      <SiAdobeillustrator></SiAdobeillustrator>,
+      <SiAdobexd></SiAdobexd>,
+      <SiAdobeaftereffects></SiAdobeaftereffects>,
+    ],
+  },
+  {
+    num: "05",
+    title: "Invites",
+    description:
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    image: "/assets/Ads/invites.jpg",
+    icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiCanva></SiCanva>],
+  },
+  {
+    num: "05",
+    title: "Banner",
+    description:
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    image: "/assets/Ads/banner1.png",
+    icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
+  },
+  {
+    num: "05",
+    title: "Digital Art",
+    description:
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    image: "/assets/Ads/art.jpg",
+    icon: [<SiAdobeillustrator></SiAdobeillustrator>],
   },
 ];
 
@@ -178,6 +247,7 @@ const Advertisments = () => {
                 );
               })}
               {/* buttons */}
+
               <div className=" h-full flex justify-center items-center mt-2">
                 <ProjSliderBtns
                   containerStyles="flex gap-2 w-full justify-between xl:w-max xl: justify-none"
