@@ -22,31 +22,23 @@ import Image from "next/image";
 
 import ProjSliderBtns from "/components/ProjSliderBtns";
 
-const projects = [
+const services = [
   {
     num: "01",
-    category: "front-end",
-    title: "project 1",
+    category: "Web Development & Design",
+    title: "Front-end + Back-end Development",
     description: "lorem ipsum jsnjf",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
     image: "/assests.png",
     live: "",
     github: "",
   },
-  {
-    num: "02",
-    category: "front-end",
-    title: "project 1",
-    description: "lorem ipsum jsnjf",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
-  },
+
   {
     num: "03",
-    category: "front-end",
-    title: "project 1",
+    category: "UX/UI Design",
+    title:
+      "Wireframes + Lofi & HiFi Prototypes + User Personas + UI Kits + UX Mood Boards",
     description: "lorem ipsum jsnjf",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
     image: "/assests.png",
@@ -55,8 +47,8 @@ const projects = [
   },
   {
     num: "04",
-    category: "front-end",
-    title: "project 1",
+    category: "Graphic Design",
+    title: "Logos + Banners + Illustrations + Components + Characters ",
     description: "lorem ipsum jsnjf",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
     image: "/assests.png",
@@ -65,8 +57,8 @@ const projects = [
   },
   {
     num: "05",
-    category: "front-end",
-    title: "project 1",
+    category: "Product Design",
+    title: "User Research + Iterative feedback implementation",
     description: "lorem ipsum jsnjf",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
     image: "/assests.png",
@@ -75,48 +67,8 @@ const projects = [
   },
   {
     num: "06",
-    category: "front-end",
-    title: "project 1",
-    description: "lorem ipsum jsnjf",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "07",
-    category: "front-end",
-    title: "project 1",
-    description: "lorem ipsum jsnjf",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "08",
-    category: "front-end",
-    title: "project 1",
-    description: "lorem ipsum jsnjf",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "09",
-    category: "front-end",
-    title: "project 1",
-    description: "lorem ipsum jsnjf",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "10",
-    category: "front-end",
-    title: "project 1",
+    category: "Motion Design",
+    title: "Advertisments + Promotions + Video Editting",
     description: "lorem ipsum jsnjf",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
     image: "/assests.png",
@@ -125,16 +77,16 @@ const projects = [
   },
 ];
 
-const Projects = () => {
-  const [project, setProject] = useState(projects[0]);
+const Services = () => {
+  const [service, setService] = useState(services[0]);
 
   const handleSlideChange = (swiper) => {
     //get currebt slide index
 
     const currentIndex = swiper.activeIndex;
-    //update project state based on current slide activeIndex
+    //update service state based on current slide activeIndex
 
-    setProject(projects[currentIndex]);
+    setService(services[currentIndex]);
   };
   return (
     <motion.section
@@ -149,24 +101,25 @@ const Projects = () => {
         <div className="flex flex-col xl:flex-row xl:gap-30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* project outline num */}
+              {/* service outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
+                {service.num}
               </div>
-              {/* project category heading */}
+              {/* service category heading */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} Project
+                {service.category}
               </h2>
-              {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <h3>{service.title}</h3>
+              {/* service description */}
+              <p className="text-white/60">{service.description}</p>
               <ul className="flex gap-4">
-                {/* project stack */}
-                {project.stack.map((item, index) => {
+                {/* service stack */}
+                {service.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
                       {item.name}
                       {/* remove last comma */}
-                      {index !== project.stack.length - 1 && ","}
+                      {index !== service.stack.length - 1 && ","}
                     </li>
                   );
                 })}
@@ -175,7 +128,7 @@ const Projects = () => {
               <div className="border border-white/20"></div>
               {/* buttons */}
               <div className="flex items-center gap-4">
-                {/*  live project button*/}
+                {/*  live service button*/}
                 <Link href={"/"}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -188,7 +141,7 @@ const Projects = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                {/*  github project button*/}
+                {/*  github service button*/}
                 <Link href={"/"}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -201,7 +154,6 @@ const Projects = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                
               </div>
             </div>
           </div>
@@ -212,7 +164,7 @@ const Projects = () => {
               className="zl:h[-520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project, index) => {
+              {services.map((service, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
@@ -221,7 +173,7 @@ const Projects = () => {
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
-                          src={project.image}
+                          src={service.image}
                           fill
                           className="object-cover"
                           alt=""
@@ -244,4 +196,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Services;

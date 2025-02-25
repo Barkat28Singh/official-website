@@ -50,44 +50,44 @@ const advertisments = [
     image: "/assets/Ads/anim.gif",
     icon: [<SiAdobephotoshop></SiAdobephotoshop>],
   },
-  {
-    num: "02",
-    title: "HydroBag-Product Design Pitch",
-    description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-    image: "/assets/Ads/pr.png",
-    icon: [
-      <SiAdobeindesign></SiAdobeindesign>,
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobephotoshop></SiAdobephotoshop>,
-    ],
-  },
-  {
-    num: "02",
-    title: "HydroSatch-Product Design Pitch",
-    description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-    image: "/assets/Ads/product2.png",
-    icon: [
-      <SiAdobeindesign></SiAdobeindesign>,
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobephotoshop></SiAdobephotoshop>,
-    ],
-  },
-  {
-    num: "02",
-    title: "SweetScape-Character Game Design Pitch",
-    description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-    image: "/assets/Ads/pitchprop.png",
-    icon: [
-      <SiAutodeskmaya></SiAutodeskmaya>,
-      <SiUnity></SiUnity>,
-      <SiAdobeindesign></SiAdobeindesign>,
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobephotoshop></SiAdobephotoshop>,
-    ],
-  },
+  // {
+  //   num: "02",
+  //   title: "HydroBag-Product Design Pitch",
+  //   description:
+  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+  //   image: "/assets/Ads/pr.png",
+  //   icon: [
+  //     <SiAdobeindesign></SiAdobeindesign>,
+  //     <SiAdobeillustrator></SiAdobeillustrator>,
+  //     <SiAdobephotoshop></SiAdobephotoshop>,
+  //   ],
+  // },
+  // {
+  //   num: "02",
+  //   title: "HydroSatch-Product Design Pitch",
+  //   description:
+  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+  //   image: "/assets/Ads/product2.png",
+  //   icon: [
+  //     <SiAdobeindesign></SiAdobeindesign>,
+  //     <SiAdobeillustrator></SiAdobeillustrator>,
+  //     <SiAdobephotoshop></SiAdobephotoshop>,
+  //   ],
+  // },
+  // {
+  //   num: "02",
+  //   title: "SweetScape-Character Game Design Pitch",
+  //   description:
+  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+  //   image: "/assets/Ads/pitchprop.png",
+  //   icon: [
+  //     <SiAutodeskmaya></SiAutodeskmaya>,
+  //     <SiUnity></SiUnity>,
+  //     <SiAdobeindesign></SiAdobeindesign>,
+  //     <SiAdobeillustrator></SiAdobeillustrator>,
+  //     <SiAdobephotoshop></SiAdobephotoshop>,
+  //   ],
+  // },
 
   {
     num: "03",

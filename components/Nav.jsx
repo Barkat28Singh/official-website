@@ -9,16 +9,16 @@ const links = [
     path: "/",
   },
   {
-    name: "work",
-    path: "/work",
-  },
-  {
     name: "about",
     path: "/about",
   },
   {
-    name: "projects",
-    path: "/projects",
+    name: "services",
+    path: "/services",
+  },
+  {
+    name: "work & projects",
+    path: "/work",
   },
   // {
   //   name: "contact",
