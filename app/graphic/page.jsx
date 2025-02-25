@@ -33,7 +33,7 @@ import {
   SiCanva,
 } from "react-icons/si";
 
-const advertisments = [
+const graphics = [
   {
     num: "01",
     title: "Sweet Teeth GIF",
@@ -50,81 +50,9 @@ const advertisments = [
     image: "/assets/Ads/anim.gif",
     icon: [<SiAdobephotoshop></SiAdobephotoshop>],
   },
-  // {
-  //   num: "02",
-  //   title: "HydroBag-Product Design Pitch",
-  //   description:
-  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-  //   image: "/assets/Ads/pr.png",
-  //   icon: [
-  //     <SiAdobeindesign></SiAdobeindesign>,
-  //     <SiAdobeillustrator></SiAdobeillustrator>,
-  //     <SiAdobephotoshop></SiAdobephotoshop>,
-  //   ],
-  // },
-  // {
-  //   num: "02",
-  //   title: "HydroSatch-Product Design Pitch",
-  //   description:
-  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-  //   image: "/assets/Ads/product2.png",
-  //   icon: [
-  //     <SiAdobeindesign></SiAdobeindesign>,
-  //     <SiAdobeillustrator></SiAdobeillustrator>,
-  //     <SiAdobephotoshop></SiAdobephotoshop>,
-  //   ],
-  // },
-  // {
-  //   num: "02",
-  //   title: "SweetScape-Character Game Design Pitch",
-  //   description:
-  //     "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
-  //   image: "/assets/Ads/pitchprop.png",
-  //   icon: [
-  //     <SiAutodeskmaya></SiAutodeskmaya>,
-  //     <SiUnity></SiUnity>,
-  //     <SiAdobeindesign></SiAdobeindesign>,
-  //     <SiAdobeillustrator></SiAdobeillustrator>,
-  //     <SiAdobephotoshop></SiAdobephotoshop>,
-  //   ],
-  // },
 
   {
     num: "03",
-    title: "Sweet Teeth Advertisment ",
-    description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
-    video: "/assets/Ads/stad.mp4",
-    icon: [
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobeaftereffects></SiAdobeaftereffects>,
-    ],
-  },
-  {
-    num: "04",
-    title: "Heart of A Lion-Motion Design Action Video ",
-    description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
-    video: "/assets/Ads/lion.mp4",
-    icon: [
-      <SiAdobeaftereffects></SiAdobeaftereffects>,
-      <SiAdobephotoshop></SiAdobephotoshop>,
-    ],
-  },
-  {
-    num: "05",
-    title: "Happy-Motion Design Lyric Video ",
-    description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
-    video: "/assets/Ads/happy.mp4",
-    icon: [
-      <SiAdobeillustrator></SiAdobeillustrator>,
-      <SiAdobexd></SiAdobexd>,
-      <SiAdobeaftereffects></SiAdobeaftereffects>,
-    ],
-  },
-  {
-    num: "05",
     title: "Invites",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
@@ -132,7 +60,7 @@ const advertisments = [
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiCanva></SiCanva>],
   },
   {
-    num: "05",
+    num: "04",
     title: "Banner",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
@@ -149,8 +77,8 @@ const advertisments = [
   },
 ];
 
-const Advertisments = () => {
-  const [advertisment, setAdvertisment] = useState(advertisments[0]);
+const Graphics = () => {
+  const [graphic, setGraphic] = useState(graphics[0]);
 
   const handleSlideChange = (swiper) => {
     //get currebt slide index
@@ -158,7 +86,7 @@ const Advertisments = () => {
     const currentIndex = swiper.activeIndex;
     //update project state based on current slide activeIndex
 
-    setAdvertisment(advertisments[currentIndex]);
+    setGraphic(graphics[currentIndex]);
   };
   return (
     <motion.section
@@ -175,18 +103,18 @@ const Advertisments = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* project outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {advertisment.num}
+                {graphic.num}
               </div>
               {/* project category heading */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {advertisment.title}
+                {graphic.title}
               </h2>
               {/* project description */}
-              <p className="text-white/60">{advertisment.description}</p>
+              <p className="text-white/60">{graphic.description}</p>
               <TooltipProvider delay-duration={100}>
                 <Tooltip>
                   <div className="text-4xl flex duration-300">
-                    {advertisment.icon}
+                    {graphic.icon}
                   </div>
                 </Tooltip>
               </TooltipProvider>
@@ -208,7 +136,7 @@ const Advertisments = () => {
               className="zl:h[-520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {advertisments.map((advertisment, index) => {
+              {graphics.map((graphic, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center">
@@ -217,17 +145,17 @@ const Advertisments = () => {
 
                       {/* Conditional Rendering */}
                       <div className=" w-full h-full">
-                        {advertisment.image ? (
+                        {graphic.image ? (
                           <Image
-                            src={advertisment.image}
+                            src={graphic.image}
                             fill
                             loop
                             className="object-contain"
                             alt="advertisement image"
                           />
-                        ) : advertisment.video ? (
+                        ) : graphic.video ? (
                           <ReactPlayer
-                            url={advertisment.video}
+                            url={graphic.video}
                             controls
                             width="100%"
                             height="100%"
@@ -262,4 +190,4 @@ const Advertisments = () => {
   );
 };
 
-export default Advertisments;
+export default Graphics;

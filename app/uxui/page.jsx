@@ -33,7 +33,6 @@ const designs = [
       "This Wikipedia remake focuses on improving both UX and UI while retaining the site’s familiar structure. The design includes Hi-Fi interactive prototypes and Lo-Fi wireframes for both web and mobile versions. The new interface incorporates a more modern color palette with earthy tones, improved typography, and clearer navigation. Key enhancements include a create account form, editing history section, and a responsive mobile version for better accessibility. The clean layout prioritizes content readability, user interaction, and ease of navigation while maintaining the platform’s educational purpose.",
     image: "/assets/UIUX/Wiki lowhifi.png",
     icon: <SiAdobexd></SiAdobexd>,
-  
   },
   {
     num: "02",
@@ -42,7 +41,6 @@ const designs = [
       "The IRCC website remake aims to improve accessibility, clarity, and user-friendliness. Key features include a redesigned header with quick access to application forms, an AI Chat Bot (GovChat) for real-time support, and a language menu offering multiple translations (Hindi, Punjabi, Persian, French). Accessibility is prioritized through options like background color adjustments and text size customization. The image carousel highlights important visuals, and an important changes section ensures users receive timely updates on global situations. The improved navigation makes complex information easily accessible, streamlining the user journey for immigrants and applicants.",
     image: "/assets/UIUX/ircc.png",
     icon: <SiAdobexd></SiAdobexd>,
-   
   },
 
   {
@@ -52,7 +50,6 @@ const designs = [
       "This Zara website remake focuses on enhancing the e-commerce shopping experience through clean Lo-Fi wireframes and structured layouts. Key features include an improved product page with a large image carousel, detailed reviews section, and options to complete the look with complementary products. The leave a review flow is streamlined with a user-friendly form and verification process. Post-submission, users are greeted with a thank-you page and suggested products, encouraging continued engagement. The design prioritizes clarity, easy navigation, and accessibility while maintaining Zara’s minimalist branding.",
     image: "/assets/UIUX/zara.png",
     icon: <SiCanva></SiCanva>,
-    
   },
   {
     num: "04",
@@ -61,7 +58,6 @@ const designs = [
       "The FILMBUCKET prototype is an IMDB-inspired web application designed in Adobe XD, offering users an engaging platform to explore movies and TV shows. The design utilizes a bold red and dark maroon color palette, creating a vibrant and cinematic feel while enhancing visual hierarchy.Key features include a home page displaying the latest releases and popular content, with categorized sections for movies, TV shows, and genres. The menu provides quick access to top-rated films, awards, trivia, and more, ensuring seamless navigation. The movie/TV show details page showcases information like cast, ratings, and upcoming releases, enhancing the browsing experience. The app includes account management features, with clear sign-up and login forms, and offers users the ability to personalize their experience. An interactive movie trivia section adds a fun, engaging element to the platform, encouraging user interaction. Overall, the UX/UI design focuses on user-friendly navigation, vibrant visuals, and functional components to create an enjoyable movie discovery and information platform.",
     image: "/assets/UIUX/film.png",
     icon: <SiAdobexd></SiAdobexd>,
-    
   },
   {
     num: "05",
@@ -70,7 +66,6 @@ const designs = [
       "The SneakAttax prototype, designed using Photoshop, is a vibrant and user-friendly reseller website tailored for sneaker enthusiasts. The UX/UI design focuses on clear visual hierarchy and an engaging shopping experience, featuring sections like Latest Drops & Arrivals and a prominent Black Friday Sale banner to capture user attention. The use of gradient backgrounds, neon-inspired typography, and sneaker imagery creates a modern, urban aesthetic that resonates with the target audience. The product cards display resale values prominently, making price comparisons easy, while the hover effects and organized layout enhance usability. Navigation is streamlined with a clear menu and quick links to different sneaker releases (e.g., Jordan, Yeezy, and SN Discord), ensuring easy access to key content. The contact section is easily accessible, providing multiple communication channels, which boosts user trust and convenience. Incorporating brand logos (Nike, Adidas, Converse) at the footer reinforces brand legitimacy. Overall, the design effectively blends bold visuals with functional elements, ensuring both aesthetic appeal and seamless user experience for sneaker shoppers.",
     image: "/assets/UIUX/sneakattax.jpg",
     icon: <SiAdobephotoshop></SiAdobephotoshop>,
-   
   },
   {
     num: "06",
@@ -79,7 +74,6 @@ const designs = [
       "TThe Sweet Teeth e-commerce web app offers a fun and user-friendly shopping experience for candy lovers. Featuring a soft pastel color palette and playful, handwritten typography, the design creates a warm and inviting atmosphere. Key pages include a visually engaging home page with illustrated category icons, a simple and intuitive shopping cart for smooth checkout, a welcoming account creation page to encourage sign-ups, and a colorful gummy bear category page with charming product displays. The overall design prioritizes ease of use, accessibility, and visual appeal, making the shopping journey enjoyable for both children and adults.",
     image: "/assets/UIUX/sweet.png",
     icon: [<SiAdobexd></SiAdobexd>, <SiAdobeillustrator></SiAdobeillustrator>],
-    
   },
   {
     num: "07",
@@ -94,9 +88,8 @@ const designs = [
     title: "Plantie-UI Kit",
     description:
       "The Plantie UI Kit, designed in Adobe XD, is a thoughtfully crafted web application interface focused on promoting sustainability and eco-conscious living. With a calming color palette inspired by nature—featuring soft greens, purples, blues, and earthy tones—the design evokes a sense of tranquility and environmental awareness.The kit includes essential components such as logo samples, color swatches, contact and account forms, and button navigation elements. The typography utilizes the PingFang TC family in varying weights (Thin, Light, Regular) for clean, readable content, reinforcing the minimalist and user-friendly approach.Design components like rounded buttons, gentle gradients, and simple forms enhance accessibility while creating a visually soothing user experience. The images of vibrant flowers and natural elements underscore the app’s sustainability theme, encouraging users to engage with plant-based lifestyles and eco-friendly practices. Plantie’s visual direction not only emphasizes aesthetic appeal but also aligns with values of environmental stewardship—making it ideal for applications centered around gardening, plant care, or sustainable living.",
-    image: "/assets/UIUX/UI Plantie.png",
+    image: "/assets/UIUX/plantie ui kit.jpg",
     icon: <SiAdobexd></SiAdobexd>,
-   
   },
   {
     num: "09",

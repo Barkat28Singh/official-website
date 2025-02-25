@@ -39,14 +39,14 @@ const works = [
     title: "Motion Design",
     description: `
     I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
-    href: "/advertisment",
+    href: "/motion",
   },
   {
     num: "06",
     title: "Graphic Design ",
     description: `
   I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
-    href: "/advertisment",
+    href: "/graphic",
   },
 ];
 
@@ -73,6 +73,7 @@ const Works = () => {
                     {" "}
                     {work.num}
                   </div>
+
                   <Link
                     href={work.href}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:rotate-45"
@@ -83,7 +84,8 @@ const Works = () => {
                 <span className=" flex text-[13px] leading-none text-white group-hover:text-accent transition-all duration-500 justify-end h-0 ">
                   Have A Peek!
                 </span>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+
+                <h2 className="text-[42px] mt-3 font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {work.title}
                 </h2>
                 <p className="text-white/60">{work.description}</p>

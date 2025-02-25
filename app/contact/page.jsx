@@ -50,14 +50,17 @@ const Contact = () => {
           {/* contact form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3>Let's Work Together & Create Innovative Solutions</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Maiores placeat quos deleniti veniam eligendi facere, ducimus
-                commodi, reiciendis tempore incidunt eum beatae magni qui saepe
-                rem nobis eveniet cupiditate accusantium.
-              </p>
-
+              <div className="flex flex-row gap-4 bg-[#27272c] xl:text-[30px] justify-center items-center  ">
+                <h3 className=" flex  text-accent group-hover:text-white justify-center text-center">
+                  Let's Work Together
+                </h3>
+                <h3 className=" flex  text-white justify-center text-center">
+                  &
+                </h3>
+                <h3 className=" flex text-accent group-hover:text-white  justify-center text-center">
+                  Create Innovative Solutions
+                </h3>
+              </div>
               {/* input area  */}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -73,12 +76,14 @@ const Contact = () => {
                   <SelectValue placeholder="Select a service"></SelectValue>
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectGroup>
+                  <SelectGroup className=" bg-[#27272c]">
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="wd">Web Development</SelectItem>
+                    <SelectItem value="wd">Web Development & Design</SelectItem>
                     <SelectItem value="ix">UI/UX Design</SelectItem>
-                    <SelectItem value="ld">Logo Design</SelectItem>
-                    <SelectItem value="cc">Content Creation</SelectItem>
+                    <SelectItem value="grd">Graphic Design</SelectItem>
+                    <SelectItem value="pd">Product Design</SelectItem>
+                    <SelectItem value="md">Motion Design</SelectItem>
+                    <SelectItem value="gd">Game Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
