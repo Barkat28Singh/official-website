@@ -14,14 +14,9 @@ const Footer = () => {
             B<span className="text-accent">S</span>
           </h1>
         </Link>
-
         {/* Desktop Footer Navigation */}
         <FooterNav />
-
         {/* Mobile Navigation (shown only on small screens) */}
-        <div className="md:hidden">
-          <MobileNav />
-        </div>
       </div>
       <p className="mt-4 text-center text-xs ">
         © {new Date().getFullYear()} Barkat Singh. All rights reserved.

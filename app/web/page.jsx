@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsBehance } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -44,7 +44,6 @@ const webworks = [
       <SiJquery></SiJquery>,
       <SiJavascript></SiJavascript>,
     ],
-   
   },
   {
     num: "02",
@@ -59,7 +58,6 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       <SiEjs></SiEjs>,
     ],
-   
   },
 
   {
@@ -74,7 +72,6 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       ,
     ],
-   
   },
   {
     num: "04",
@@ -87,7 +84,6 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       <SiFirebase></SiFirebase>,
     ],
-    
   },
   {
     num: "05",
@@ -96,7 +92,6 @@ const webworks = [
       "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
     image: "/assets/Web/odc.png",
     icon: [<FaWix></FaWix>, <FaHtml5></FaHtml5>, <SiCss3></SiCss3>],
-   
   },
 ];
 
@@ -139,16 +134,61 @@ const Webworks = () => {
                   <div className="text-4xl flex duration-300">
                     {webwork.icon}
                   </div>
-                </Tooltip>
+                </Tooltip>                                                                  
               </TooltipProvider>
 
               {/* border */}
               <div className="border border-white/20"></div>
               {/* buttons */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mb-10">
                 {/*  live project button*/}
 
                 {/*  github project button*/}
+
+                {/*  behance project button*/}
+
+                <Link href={"/sweet"}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>See More</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+                <Link
+                  href={"https://github.com/Barkat28Singh/Sweet-Teeth-2.0.git"}
+                >
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Github Repository</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+                <Link
+                  href={
+                    "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project"
+                  }
+                >
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsBehance className="text-white text-3xl group-hover:text-accent"></BsBehance>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Behance</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
               </div>
             </div>
           </div>
