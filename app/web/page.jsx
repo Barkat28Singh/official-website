@@ -26,10 +26,9 @@ import {
   SiJavascript,
   SiJquery,
   SiMysql,
-  SiGit,
   SiNodedotjs,
 } from "react-icons/si";
-import { FaBootstrap, FaHtml5, FaWix, FaWordpress } from "react-icons/fa";
+import { FaBootstrap, FaHtml5, FaWix } from "react-icons/fa";
 
 const webworks = [
   {
@@ -44,6 +43,10 @@ const webworks = [
       <SiJquery></SiJquery>,
       <SiJavascript></SiJavascript>,
     ],
+    link: "/sweet",
+    github: "https://github.com/Barkat28Singh/Sweet-Teeth-2.0.git",
+    behance:
+      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
   {
     num: "02",
@@ -58,6 +61,10 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       <SiEjs></SiEjs>,
     ],
+    link: "/film",
+    github: "https://github.com/Barkat28Singh/Filmbucket",
+    behance:
+      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
 
   {
@@ -72,6 +79,10 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       ,
     ],
+    link: "/recipe",
+    github: "https://github.com/Barkat28Singh/Roadmap-Recipe.git",
+    behance:
+      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
   {
     num: "04",
@@ -84,6 +95,10 @@ const webworks = [
       <SiNodedotjs></SiNodedotjs>,
       <SiFirebase></SiFirebase>,
     ],
+    link: "/butterfly",
+    github: "https://github.com/Barkat28Singh/Butterfly.git",
+    behance:
+      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
   {
     num: "05",
@@ -92,11 +107,14 @@ const webworks = [
       "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
     image: "/assets/Web/odc.png",
     icon: [<FaWix></FaWix>, <FaHtml5></FaHtml5>, <SiCss3></SiCss3>],
+    link: "/odc",
+    behance:
+      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
 ];
 
 const Webworks = () => {
-  const [webwork, setWebwork] = useState(webworks[0]);
+  const [webwork, setWebwork, index] = useState(webworks[0]);
 
   const handleSlideChange = (swiper) => {
     //get currebt slide index
@@ -131,7 +149,10 @@ const Webworks = () => {
               <p className="text-white/60">{webwork.description}</p>
               <TooltipProvider delay-duration={100}>
                 <Tooltip>
-                  <div className="text-4xl flex duration-300">
+                  <div
+                    key={webwork.index}
+                    className="text-4xl flex duration-300"
+                  >
                     {webwork.icon}
                   </div>
                 </Tooltip>
@@ -147,7 +168,7 @@ const Webworks = () => {
 
                 {/*  behance project button*/}
 
-                <Link href={"/sweet"}>
+                <Link href={webwork.link}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -159,25 +180,23 @@ const Webworks = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link
-                  href={"https://github.com/Barkat28Singh/Sweet-Teeth-2.0.git"}
-                >
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{webwork.title} Github Repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                <Link
-                  href={
-                    "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project"
-                  }
-                >
+
+                {webwork.github && (
+                  <Link href={webwork.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{webwork.title} Github Repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
+                <Link href={webwork.behance}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
