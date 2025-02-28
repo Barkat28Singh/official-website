@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 
 const Footer = () => {
   return (
-    <footer className="bg-pink-50/10 py-6 text-white mt-12">
+    <footer className="bg-pink-50/10 py-6 text-white mt-[100px]">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         {/* Logo */}
         <Link href="/">

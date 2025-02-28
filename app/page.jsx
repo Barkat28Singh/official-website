@@ -25,7 +25,7 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
               {/* Adding a Downlaod Link */}
               <a
-                href="assets/Resume/Barkat-Resume.pdf"
+                href="assets/Resume/Resume Barkat Singh.pdf"
                 download="Barkat-Resume.pdf"
               >
                 <Button

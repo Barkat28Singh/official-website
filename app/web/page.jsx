@@ -134,7 +134,7 @@ const Webworks = () => {
                   <div className="text-4xl flex duration-300">
                     {webwork.icon}
                   </div>
-                </Tooltip>                                                                  
+                </Tooltip>
               </TooltipProvider>
 
               {/* border */}
@@ -154,7 +154,7 @@ const Webworks = () => {
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>See More</p>
+                        <p>See More About {webwork.title}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -168,7 +168,7 @@ const Webworks = () => {
                         <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Github Repository</p>
+                        <p>{webwork.title} Github Repository</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -184,7 +184,7 @@ const Webworks = () => {
                         <BsBehance className="text-white text-3xl group-hover:text-accent"></BsBehance>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Behance</p>
+                        <p>{webwork.title} Behance</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

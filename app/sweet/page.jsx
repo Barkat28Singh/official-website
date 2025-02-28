@@ -1,27 +1,17 @@
 "use client";
+import Link from "next/link";
+import { BsArrowLeft } from "react-icons/bs";
+import ReactPlayer from "react-player";
+import { FaCss3, FaJs, FaHtml5, FaBootstrap } from "react-icons/fa";
 
 import {
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaHtml5,
-  FaBootstrap,
-} from "react-icons/fa";
-
-import {
-  SiTailwindcss,
-  SiNextdotjs,
   SiJquery,
-  SiFirebase,
-  SiAdobecreativecloud,
-  SiMysql,
-  SiMongodb,
+  SiAdobeaftereffects,
+  SiAdobeillustrator,
+  SiAdobexd,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "/components/ui/tabs";
-
 import {
   Tooltip,
   TooltipContent,
@@ -29,178 +19,153 @@ import {
   TooltipTrigger,
 } from "/components/ui/tooltip";
 
-import { ScrollArea } from "/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import Image from "next/image";
-const sweet = {
-  title: "Sweet Teeth",
-  description:
-    "Sweet Teeth is a project inspired by my father's love for all types of sweets. There is a runnin gjoke in the family that he does not have a sweet tooth, rather multiple sweet teeth. Hence, the name for this project was born.  ",
 
+// About, Process, Features, Toolkit Data (same as you provided but fixed)
+const about = {
+  title: "Sweet Teeth: A Sweet Shopping Experience 🍭🍫",
+  description:
+    "Sweet Teeth is a creative e-commerce project inspired by my father's lifelong passion for sweets. In my family, we always joked that he didn't have just a sweet tooth — he had a whole set of 'Sweet Teeth'. This personal connection sparked the idea for a vibrant, playful online candy store designed to immerse users in the colorful world of international confectionery. \n\nThe project went through two major phases of development, evolving from a static, visually engaging storefront into a fully responsive and interactive shopping platform. Along the way, Sweet Teeth's brand identity came to life through custom motion design advertisements, playful product imagery, and interactive candy selection tools. Sweet Teeth was more than a technical challenge — it was an exploration in user-centered design, branding, and building an experience that evokes joy and nostalgia for every candy lover.",
   info: [
     {
-      fieldName: "Phone",
-      fieldValue: "(+1) 647 675 4385",
+      fieldName: "My Role",
+      fieldValue:
+        "Tech Lead, Front End Developer, UX/UI Designer, and Motion Graphics Designer",
     },
     {
-      fieldName: "Email",
-      fieldValue: "barkat01@alumni.utoronto.ca",
-      image: "/assets/Images/2.JPG",
+      fieldName: "Team Members",
+      fieldValue:
+        "3 Members — Collaborated closely with two team members to manage design assets, user flows, and front-end development.",
+      image: "/assets/SweetTeeth/first.png",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Indian",
-      image: "/assets/Images/3.jpg",
+      fieldName: "Methodology Used",
+      fieldValue:
+        "Scrum — Employed agile techniques with iterative sprints, daily stand-ups, and bi-weekly retrospectives to enhance features and refine design based on user feedback.",
+      image: "/assets/SweetTeeth/mix.png",
     },
     {
       fieldName: "Location",
-      fieldValue: "Toronto, ON, CA",
-      image: "/assets/Images/4.jpg",
-    },
-
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Hindi, Farsi, Punjabi",
+      fieldValue: "Humber College North - Etobicoke, ON, Canada",
+      image: "/assets/SweetTeeth/second.png",
     },
   ],
 };
 
-const experience = {
-  icon: "",
-  title: "My Experience",
-  description:
-    "I have extensive experience as a Full-Stack Developer, Designer, and Project Lead. I've led cross-functional teams at UofT Web Dev Club, delivering successful full-stack projects and fostering team collaboration. At Humber College, I developed responsive web applications and designed user-centric UI/UX components. My internship at Jupitice involved enhancing websites and optimizing team workflows. Additionally, I supported academic success as a Program Assistant at UTM, managed administrative tasks at Aramark, and showcased creativity as a Creative Director at Open Design Collaboratory and Product Designer for Hydro Bag & Satch.",
+const process = {
+  title1: "Sweet Teeth 1.0: The Foundation 🍬",
+  title2: "Sweet Teeth 2.0: The Evolution 🚀",
   items: [
     {
-      company: "UofT Web Dev Club",
-      position: "Project Lead",
-      duration: "2023-2024",
+      num: "1.",
+      step: "🧐 Research & Ideation",
+      description:
+        "The project began with comprehensive research into international candy trends and user preferences. We conducted surveys to understand how users prefer to browse and purchase specialty sweets online. The insights helped us craft initial wireframes, define user personas, and map user flows to ensure the experience would be both delightful and intuitive.",
+      image: "/assets/SweetTeeth/res.png",
     },
     {
-      company: "Humber College North",
-      position: "Web Developer & Designer",
-      duration: "2022-2023",
+      num: "2.",
+      step: "🎨 Design & Prototyping",
+      description:
+        "With a strong focus on visual storytelling, the design phase involved creating high-fidelity wireframes in Adobe XD, establishing a playful and vibrant brand identity. The design language incorporated bold colors, rounded typography, and fun animations. This phase also saw the creation of motion design advertisements and GIFs using Adobe After Effects and Premiere Pro, further enhancing Sweet Teeth’s personality.",
+      image: "/assets/SweetTeeth/wir.png",
     },
     {
-      company: "Jupitice – AEREN IT Solutions",
-      position: "Junior Software Engineer Intern",
-      duration: "2021-2021",
+      num: "3.",
+      step: "💻 Development",
+      description:
+        "Sweet Teeth 1.0 was built using HTML, CSS, Bootstrap, jQuery, and vanilla JavaScript, focusing on core e-commerce functionality like product browsing and checkout. In Sweet Teeth 2.0, the focus shifted to responsiveness, with the site optimized for mobile, tablet, and desktop users. The updated version introduced dynamic UI components, a Mix & Match builder, and interactive category pages to offer a personalized shopping experience.",
+      image: "/assets/SweetTeeth/dev.png",
     },
     {
-      company: "RGASC, UTM",
-      position: "Program Assistant",
-      duration: "2023-Present",
+      num: "4.",
+      step: "📊 Testing & Optimization",
+      description:
+        "User testing played a crucial role in improving Sweet Teeth’s usability. We gathered feedback on navigation, responsiveness, and performance across devices. Insights from user testing directly shaped refinements, including improving load times, simplifying the checkout flow, and enhancing category filters for easier product discovery. Optimization techniques included image compression, lazy loading, and modular CSS/JS structuring.",
+      image: "/assets/SweetTeeth/proj1/test.png",
     },
     {
-      company: "Aramark, UTM",
-      position: "Administrative Assistant",
-      duration: "2021-2022",
+      num: "5.",
+      step: "🚀 Final Deployment & Launch",
+      description:
+        "The final iteration of Sweet Teeth was a fully responsive, visually rich, and performance-optimized candy shopping platform. Alongside the web experience, we deployed promotional assets — including video advertisements and animated banners — to establish a cohesive and memorable brand presence across social platforms.",
+      image: "/assets/SweetTeeth/proj2/sweet2.png",
     },
-    // {
-    //   company: "Open Design Collaboratory",
-    //   position: "Creative Director",
-    //   duration: "2023-2024",
-    // },
-    // {
-    //   company: "Hydro Bag & Satch",
-    //   position: "Product Designer",
-    //   duration: "2024-2024",
-    // },
   ],
 };
 
-const education = {
-  icon: "",
-  title: "My Education",
-  description:
-    "I hold an Honours B.Sc. in Applied Mathematics and Communication, Culture & Information Technology from the University of Toronto Mississauga, where I was actively involved in the MCS Club, UofT Web Dev Club (Project Lead), and various student roles. I also earned a Web Design and Development Certificate from Humber College with a 91.5% grade, leading full-stack projects like Film-Bucket and Sweet Teeth. Additionally, I graduated from Strawberry Fields School in the non-medical stream, participating in athletics, swimming, and MUN leadership.",
+const features = {
+  title: "Features: A Deliciously Interactive Shopping Experience 🍭",
   items: [
     {
-      institution: "University of Toronto-Mississauga",
-      degree: "Honours Bachelor of Science (HBsc)",
-      field_of_study:
-        "Double major in Applied Mathematics and Information Technology",
-      duration: "2019-2024",
+      num: "1.",
+      feature: "🌎 International Candy Selection",
+      description:
+        "A curated catalog featuring sweets from across the globe, allowing users to discover and explore treats from India, Japan, the Caribbean, and beyond. Each product is presented with vibrant imagery, playful descriptions, and clear categorization for effortless browsing.",
+      image: "/assets/SweetTeeth/proj1/inter.png",
     },
     {
-      institution: "Humber College-North",
-      degree: "1-year Diploma program",
-      field_of_study: "Web Development and Design",
-      duration: "2022-2023",
+      num: "2.",
+      feature: "📦 TreatBox Package",
+      description:
+        "To cater to gift shoppers and seasonal buyers, we introduced pre-packaged TreatBoxes. These themed boxes — available for holidays like Halloween and Christmas — offer a curated mix of candies, beautifully packaged and ready for purchase with a single click.",
+      image: "/assets/SweetTeeth/proj1/treat.png",
     },
     {
-      institution: "Strawberry Fields High School",
-      degree: "XII ISC Certificate of Completetion",
-      field_of_study:
-        "Non-Medical Stream: Physics, Chemistry, Mathematics, Computer Science",
-      duration: "2017-2019",
+      num: "3.",
+      feature: "🍬 Mix & Match Builder",
+      description:
+        "For candy enthusiasts who prefer a personalized experience, Sweet Teeth features a Mix & Match section. This interactive tool lets users hand-pick individual candies and build their own custom treat box, with real-time visual previews that update as selections are made.",
+      image: "/assets/SweetTeeth/proj1/match.png",
+    },
+    {
+      num: "4.",
+      feature: "🎞️ Motion Design & GIFs",
+      description:
+        "To enhance Sweet Teeth’s brand personality, we incorporated motion design into both the website and marketing assets. Custom animated product reveals, dynamic category banners, and looping GIFs bring the store to life — reinforcing the fun, playful nature of the brand.",
+      image: "/assets/SweetTeeth/Sweet_Teeth_GIF.gif",
+      video: "/assets/SweetTeeth/main comp 2.mp4",
     },
   ],
 };
 
-const skills = {
-  title: "Tools & Technologies",
-  description:
-    " I am ambitious Full-Stack Web Developer and Designer with skills in HTML/CSS, JavaScript, Node.js, Git, and Firebase, along with design tools like Figma, Photoshop, and Adobe XD. My collaborative spirit, problem-solving abilities, and passion for innovation drive my work.",
+const toolkit = {
+  title: "Toolkit: Technologies, Methodologies & Learnings 🔧",
+  description: [
+    {
+      sub: "Enhanced UI/UX & Responsive Design",
+      bullet:
+        "Gained extensive experience creating user-friendly interfaces that adapt seamlessly across devices. Learned to balance visual richness with performance optimization through modular styling and smart asset management.",
+    },
+    {
+      sub: "Agile Development & Scrum Methodology",
+      bullet:
+        "Worked within a Scrum framework, participating in sprint planning, daily standups, and retrospective sessions. This iterative process encouraged frequent testing, rapid adjustments, and constant collaboration across design and development.",
+    },
+    {
+      sub: "Motion Design & Branding Integration",
+      bullet:
+        "Strengthened my skills in motion graphics by designing product reveal animations, interactive banners, and promotional videos using Adobe After Effects. Ensured that all motion elements were aligned with the overall brand identity.",
+    },
+    {
+      sub: "Advanced Interactive Features",
+      bullet:
+        "Gained hands-on experience developing dynamic UI features, including real-time builders like the Mix & Match candy box tool. Combined jQuery logic with modular CSS to ensure smooth user interactions across devices.",
+    },
+  ],
   skillList: [
-    {
-      icon: <FaHtml5></FaHtml5>,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3></FaCss3>,
-      name: "Css 3",
-    },
-    {
-      icon: <FaJs></FaJs>,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact></FaReact>,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs></SiNextdotjs>,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss></SiTailwindcss>,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs></FaNodeJs>,
-      name: "node.js",
-    },
-    {
-      icon: <SiJquery></SiJquery>,
-      name: "jquery",
-    },
-    {
-      icon: <SiFirebase></SiFirebase>,
-      name: "firebase",
-    },
-    {
-      icon: <SiMysql></SiMysql>,
-      name: "mysql",
-    },
-    {
-      icon: <SiMongodb></SiMongodb>,
-      name: "mongodb",
-    },
-    {
-      icon: <FaBootstrap></FaBootstrap>,
-      name: "bootstrap",
-    },
-    {
-      icon: <FaFigma></FaFigma>,
-      name: "figma",
-    },
-    {
-      icon: <SiAdobecreativecloud></SiAdobecreativecloud>,
-      name: "Adobe cc",
-    },
+    { icon: <FaHtml5 />, name: "HTML 5" },
+    { icon: <FaCss3 />, name: "CSS 3" },
+    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiJquery />, name: "jQuery" },
+    { icon: <FaBootstrap />, name: "Bootstrap" },
+    { icon: <SiAdobeaftereffects />, name: "After Effects" },
+    { icon: <SiAdobeillustrator />, name: "Illustrator" },
+    { icon: <SiAdobexd />, name: "Adobe XD" },
   ],
 };
+
 const Sweet = () => {
   return (
     <motion.div
@@ -209,14 +174,33 @@ const Sweet = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 l:py-0"
+      className=" flex items-center justify-center py-12"
     >
       <div className="container mx-auto">
+        {/* Back Button */}
+        <Link
+          href="/web"
+          className="flex w-[70px] h-[70px] rounded-full bg-white/5 justify-center items-center group mb-7"
+        >
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <BsArrowLeft className="text-white text-3xl group-hover:text-accent" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Back to Projects</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </Link>
+
+        {/* Main Tabs */}
         <Tabs
           defaultValue="about"
-          className="flex flex-col xl:flex-row gap-[80px] "
+          className="flex flex-col xl:flex-row gap-[80px]"
         >
-          <TabsList className="flex flex-col max-w-[380px] mx-auto xl:mx-0 gap-8">
+          {/* Sidebar Navigation */}
+          <TabsList className="flex flex-col gap-8">
             <TabsTrigger
               className=" data-[state=active]:text-accent"
               value="about"
@@ -225,163 +209,200 @@ const Sweet = () => {
             </TabsTrigger>
             <TabsTrigger
               className=" data-[state=active]:text-accent"
-              value="experience"
+              value="progression"
             >
-              Experience
+              Process
             </TabsTrigger>
             <TabsTrigger
               className=" data-[state=active]:text-accent"
-              value="education"
+              value="features"
             >
               Features
             </TabsTrigger>
             <TabsTrigger
               className=" data-[state=active]:text-accent"
-              value="skills"
+              value="toolkit"
             >
-              Rescources
+              Toolkit
             </TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh] w-full">
-            {/* experience */}
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] ">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className=" text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center md:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-            {/* education */}
-            <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
-                {/* <ScrollArea className="h-[400px]"> */}
-                <ul className="grid grid-cols-2 gap-[30px] ">
-                  {education.items.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col xl:items-start gap-1 "
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[400px] min-h-[60px] lg:text-left">
-                          {item.degree}
-                        </h3>
-                        <div className=" max-w-[400px] min-h-[60px] lg:text-left gap-3">
-                          <p className=" text-accent">{item.institution}</p>
-                          <p className=" text-white/60">
-                            {item.field_of_study}
-                          </p>
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
-                {/* </ScrollArea> */}
-              </div>
-            </TabsContent>
-            {/* skills */}
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] ">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className=" text-white/60 mx-auto xl:mx-0">
-                    {skills.description}
-                  </p>
-                </div>
-
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[100px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <TooltipProvider delay-duration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center-group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
-            {/* about */}
+          {/* Tab Contents */}
+          <div className="w-full">
+            {/* About Section */}
             <TabsContent
               value="about"
-              className="w-full flex flex-col xl:flex-row gap-8 "
+              className="flex flex-col xl:flex-row gap-8"
             >
-              {/* Left Column: Text & Info */}
-              <div className="flex flex-col gap-6 w-full xl:w-1/2  ">
-                <h3 className="text-3xl md:text-4xl font-bold md:items-start">
-                  {sweet.title}
+              <div className="flex flex-col gap-6 w-full xl:w-1/2">
+                <h3 className="xl:text-3xl text-center text-2xl font-bold mb-6  ">
+                  {about.title}
                 </h3>
-                <p className="max-w-full md:max-w-[600px] text-white/60 flex md:items-center">
-                  {sweet.description}
-                </p>
+                <p className="text-white/60">{about.description}</p>
                 <ul className="flex flex-col gap-2">
-                  {sweet.info.map((item, index) => (
-                    <li key={index} className="flex flex-col">
-                      <span className="text-white/60 text-sm md:text-base">
-                        {item.fieldName}
+                  {about.info.map((item, index) => (
+                    <li key={index}>
+                      <span className="text-accent text-md ">
+                        {item.fieldName}:
                       </span>
-                      <span className="text-md">{item.fieldValue}</span>
+                      <span className="text-sm"> {item.fieldValue}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Right Column: Images (only display items with an image) */}
-              <div className="grid gap-4 bg-[#232329] p-4 rounded-xl xl:w-1/2  md:items-center">
-                {sweet.info
+              {/* About Images */}
+              <div className="grid gap-3 xl:w-1/2">
+                {about.info
                   .filter((item) => item.image)
                   .map((item, index) => (
                     <div
                       key={index}
-                      className="relative w-full h-[300px] rounded-xl"
+                      className="bg-[#232329] rounded-xl flex justify-center items-center"
                     >
                       <Image
                         src={item.image}
-                        className="object-cover rounded-xl  h-full"
-                        fill
                         alt={item.fieldName}
+                        width={450}
+                        height={400}
+                        className="rounded-lg"
                       />
                     </div>
                   ))}
+              </div>
+            </TabsContent>
+
+            {/* Process Section */}
+            <TabsContent value="progression" className="tabs-content">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+                {process.title1} & {process.title2}
+              </h3>
+              <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {process.items.map((item, index) => (
+                  <li
+                    key={index}
+                    className="bg-[#232329] p-6 rounded-xl flex flex-col gap-4"
+                  >
+                    <span className="text-accent font-semibold">
+                      {item.num}
+                    </span>
+                    <h4 className="text-xl font-bold">{item.step}</h4>
+                    <p className="text-white/60">{item.description}</p>
+                    <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center w-full">
+                      <Image
+                        src={item.image}
+                        alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
+                        width={400}
+                        height={200}
+                        className="rounded-lg h-[300px] object-cover"
+                      />
+                    </div>
+
+                    {/* Video - Only show if video exists */}
+                    {item.video && (
+                      <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
+                        <ReactPlayer
+                          url={item.video}
+                          controls
+                          width="100%"
+                          height="100%"
+                          style={{
+                            maxHeight: "350px",
+                            objectFit: "contain",
+                            pointerEvents: "auto",
+                          }}
+                        />
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </TabsContent>
+
+            {/* Features Section */}
+            <TabsContent value="features">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+                {features.title}
+              </h3>
+              <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {features.items.map((item, index) => (
+                  <li
+                    key={index}
+                    className="bg-[#232329] p-6 rounded-xl flex flex-col gap-4"
+                  >
+                    <span className="text-accent font-semibold">
+                      {item.num}
+                    </span>
+                    <h4 className="text-xl font-bold">{item.feature}</h4>
+                    <p className="text-white/60">{item.description}</p>
+
+                    <div className="flex flex-col gap-4">
+                      {/* Image */}
+                      <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
+                        <Image
+                          src={item.image}
+                          alt={item.feature || "Sweet Teeth Feature Image"}
+                          width={400}
+                          height={200}
+                          className="rounded-lg h-[300px] object-cover"
+                        />
+                      </div>
+
+                      {/* Video - Only show if video exists */}
+                      {item.video && (
+                        <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
+                          <ReactPlayer
+                            url={item.video}
+                            controls
+                            width="100%"
+                            height="100%"
+                            style={{
+                              maxHeight: "350px",
+                              objectFit: "contain",
+                              pointerEvents: "auto",
+                            }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </TabsContent>
+
+            {/* Toolkit Section */}
+            <TabsContent value="toolkit">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+                {toolkit.title}
+              </h3>
+              <div className="flex flex-col gap-6">
+                {toolkit.description.map((item, index) => (
+                  <div key={index} className="bg-[#232329] p-6 rounded-xl">
+                    <h4 className="text-xl font-bold">{item.sub}</h4>
+                    <p className="text-white/60">{item.bullet}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Skills Grid */}
+              <h4 className="text-2xl font-bold mt-6 mb-4">
+                Technologies & Tools
+              </h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                {toolkit.skillList.map((skill, index) => (
+                  <TooltipProvider key={index}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                        <div className="text-5xl group-hover:text-accent transition-all duration-100">
+                          {skill.icon}
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="capitalize">{skill.name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                ))}
               </div>
             </TabsContent>
           </div>
