@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight, BsBehance, BsGithub } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -26,10 +26,6 @@ import {
   SiAdobeillustrator,
   SiAdobexd,
   SiAdobephotoshop,
-  SiAdobeindesign,
-  SiAdobeaftereffects,
-  SiAutodeskmaya,
-  SiUnity,
   SiCanva,
 } from "react-icons/si";
 
@@ -41,7 +37,11 @@ const graphics = [
       "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
     image: "/assets/Ads/Sweet_Teeth_GIF.gif",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
+    link: "/sweet",
+    behance:
+      "https://www.behance.net/gallery/168802341/Sweet-Teeth-Motion-design-Logo",
   },
+
   {
     num: "02",
     title: "Sneak Attax Promotion GIF",
@@ -49,31 +49,47 @@ const graphics = [
       "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
     image: "/assets/Ads/anim.gif",
     icon: [<SiAdobephotoshop></SiAdobephotoshop>],
+    behance:
+      "https://www.behance.net/gallery/168802641/Sneak-Attax-Advertisment",
   },
 
   {
     num: "03",
-    title: "Invites",
+    title: "Invitation Cards",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     image: "/assets/Ads/invites.jpg",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiCanva></SiCanva>],
+    behance: "https://www.behance.net/gallery/155637239/Invitation-Cards",
   },
   {
     num: "04",
-    title: "Banner",
+    title: "Adobe Splash Banner",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
     image: "/assets/Ads/banner1.png",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
+    behance: "https://www.behance.net/gallery/155635937/Adobe-Splash-Banner",
   },
   {
     num: "05",
-    title: "Digital Art",
+    title: "Digital Art: Pyschedelic Reaping",
     description:
       "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
-    image: "/assets/Ads/art.jpg",
+    image: "/assets/Ads/art2.png",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>],
+    behance:
+      "https://www.behance.net/gallery/155637917/Pyschedelic-reaping-Silhouette-Digital-Illustration",
+  },
+  {
+    num: "05",
+    title: "Digital Art: Illumniating Lamps",
+    description:
+      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+    image: "/assets/Ads/art1.png",
+    icon: [<SiAdobeillustrator></SiAdobeillustrator>],
+    behance:
+      "https://www.behance.net/gallery/155637745/Illuminating-Lamps-Illustrator-Project",
   },
 ];
 
@@ -95,37 +111,97 @@ const Graphics = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 l:py-0"
+      className="min-h-screen flex items-center justify-center py-12 xl:py-0 overflow-hidden"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-24">
         <div className="flex flex-col xl:flex-row xl:gap-30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none pr-5">
-            <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* project outline num */}
+            <div className="flex flex-col gap-[30px] h-full xl:h-[100%] justify-between">
+              {/* Project Outline Number */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {graphic.num}
               </div>
-              {/* project category heading */}
+
+              {/* Project Title */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {graphic.title}
               </h2>
-              {/* project description */}
+
+              {/* Project Description */}
               <p className="text-white/60">{graphic.description}</p>
-              <TooltipProvider delay-duration={100}>
+
+              {/* Icons (Tech Stack) */}
+              <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <div className="text-4xl flex duration-300">
-                    {graphic.icon}
+                  <div className="flex flex-wrap gap-4 text-4xl items-center">
+                    {/* This handles the spacing issue */}
+                    {Array.isArray(graphic.icon) ? (
+                      graphic.icon.map((icon, index) => (
+                        <div
+                          key={index}
+                          className="hover:text-accent transition-all duration-300"
+                        >
+                          {icon}
+                        </div>
+                      ))
+                    ) : (
+                      <div className="hover:text-accent transition-all duration-300">
+                        {graphic.icon}
+                      </div>
+                    )}
                   </div>
                 </Tooltip>
               </TooltipProvider>
 
-              {/* border */}
+              {/* Border Divider */}
               <div className="border border-white/20"></div>
-              {/* buttons */}
-              <div className="flex items-center gap-4">
-                {/*  live project button*/}
 
-                {/*  github project button*/}
+              {/* Action Buttons (Links, Behance, GitHub) */}
+              <div className="flex items-center gap-4 mt-auto">
+                {graphic.link && (
+                  <Link href={graphic.link}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent transition-all duration-300" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>See More About {graphic.title}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
+                {graphic.github && (
+                  <Link href={graphic.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent transition-all duration-300" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{graphic.title} GitHub Repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
+                {graphic.behance && (
+                  <Link href={graphic.behance}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsBehance className="text-white text-3xl group-hover:text-accent transition-all duration-300" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{graphic.title} Behance</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -141,41 +217,22 @@ const Graphics = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center">
                       {/* overlay */}
-                      {/* <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div> */}
-
-                      {/* Conditional Rendering */}
-                      <div className=" w-full h-full">
-                        {graphic.image ? (
-                          <Image
-                            src={graphic.image}
-                            fill
-                            loop
-                            className="object-contain"
-                            alt="advertisement image"
-                          />
-                        ) : graphic.video ? (
-                          <ReactPlayer
-                            url={graphic.video}
-                            controls
-                            width="100%"
-                            height="100%"
-                            style={{
-                              objectFit: "contain",
-                              pointerEvents: "auto",
-                            }}
-                          />
-                        ) : (
-                          <p className="text-white text-center">
-                            No media available
-                          </p>
-                        )}
+                      <div className="absolute top-0 bottom-0 w-fullh-full bg-black/10 z-10"></div>
+                      {/* image */}
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={graphic.image}
+                          fill
+                          sizes=""
+                          className="object-contain"
+                          alt="graphic images"
+                        ></Image>
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
               {/* buttons */}
-
               <div className=" h-full flex justify-center items-center mt-2">
                 <ProjSliderBtns
                   containerStyles="flex gap-2 w-full justify-between xl:w-max xl: justify-none"

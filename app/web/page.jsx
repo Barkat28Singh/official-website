@@ -63,8 +63,7 @@ const webworks = [
     ],
     link: "/film",
     github: "https://github.com/Barkat28Singh/Filmbucket",
-    behance:
-      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
+    behance: "https://www.behance.net/gallery/220142571/FilmBucket-Project",
   },
 
   {
@@ -81,8 +80,6 @@ const webworks = [
     ],
     link: "/recipe",
     github: "https://github.com/Barkat28Singh/Roadmap-Recipe.git",
-    behance:
-      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
   {
     num: "04",
@@ -97,8 +94,6 @@ const webworks = [
     ],
     link: "/butterfly",
     github: "https://github.com/Barkat28Singh/Butterfly.git",
-    behance:
-      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
   },
   {
     num: "05",
@@ -147,13 +142,14 @@ const Webworks = () => {
               </h2>
               {/* project description */}
               <p className="text-white/60">{webwork.description}</p>
-              <TooltipProvider delay-duration={100}>
+              <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <div
-                    key={webwork.index}
-                    className="text-4xl flex duration-300"
-                  >
-                    {webwork.icon}
+                  <div className="flex gap-4 text-4xl items-center">
+                    {webwork.icon.map((icon, index) => (
+                      <div key={index} className="flex items-center">
+                        {icon}
+                      </div>
+                    ))}
                   </div>
                 </Tooltip>
               </TooltipProvider>
@@ -167,20 +163,20 @@ const Webworks = () => {
                 {/*  github project button*/}
 
                 {/*  behance project button*/}
-
-                <Link href={webwork.link}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>See More About {webwork.title}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-
+                {webwork.link && (
+                  <Link href={webwork.link}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>See More About {webwork.title}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 {webwork.github && (
                   <Link href={webwork.github}>
                     <TooltipProvider delayDuration={100}>
@@ -195,19 +191,20 @@ const Webworks = () => {
                     </TooltipProvider>
                   </Link>
                 )}
-
-                <Link href={webwork.behance}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsBehance className="text-white text-3xl group-hover:text-accent"></BsBehance>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{webwork.title} Behance</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {webwork.behance && (
+                  <Link href={webwork.behance}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsBehance className="text-white text-3xl group-hover:text-accent"></BsBehance>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{webwork.title} Behance</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
