@@ -30,9 +30,9 @@ import {
 const motionprojs = [
   {
     num: "01",
-    title: "Happy-Motion Design Lyric Video ",
+    title: "Happy - Motion Design Lyric Video",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "This lyric video for 'Happy' by Pharrell Williams combines bright, playful typography with dynamic motion graphics to amplify the song’s upbeat energy. Using Adobe Illustrator and Photoshop for asset creation, Adobe XD for initial frame designs, and After Effects for animation, the video features smooth text transitions, rhythmic animations synced to the music, and vibrant color schemes. It showcases my ability to blend typography, motion timing, and visual storytelling into an engaging experience.",
     video: "/assets/Ads/happy.mp4",
     icon: [
       <SiAdobeillustrator></SiAdobeillustrator>,
@@ -45,9 +45,9 @@ const motionprojs = [
   },
   {
     num: "02",
-    title: "Sweet Teeth Motion Design Video Advertisment",
+    title: "Sweet Teeth - Motion Design Video Advertisement",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "This animated ad for Sweet Teeth brings the candy store to life with playful animations, illustrated product showcases, and bouncy transitions. Created using Adobe Illustrator for custom candy illustrations and After Effects for animation, the video highlights key product categories, promotions, and branding. The motion design balances fun and clarity, ensuring the ad appeals to both children and adults while maintaining brand consistency.",
     video: "/assets/Ads/stad.mp4",
     icon: [
       <SiAdobeillustrator></SiAdobeillustrator>,
@@ -59,9 +59,9 @@ const motionprojs = [
   },
   {
     num: "03",
-    title: "Heart of A Lion-Motion Design Action Video ",
+    title: "Heart of a Lion - Motion Design Action Video",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "Heart of a Lion is a high-intensity action promo video combining bold kinetic typography with fast-cut visuals to create a powerful, adrenaline-pumping experience. Designed using Photoshop for background elements and After Effects for dynamic text animation and visual effects, the video embodies strength and determination. Each transition and effect was carefully synced to the soundtrack, amplifying the storytelling through motion design and cinematic pacing.",
     video: "/assets/Ads/lion.mp4",
     icon: [
       <SiAdobeaftereffects></SiAdobeaftereffects>,

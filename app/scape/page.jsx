@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 
 import { FaPaintBrush, FaGamepad, FaVolumeUp } from "react-icons/fa";
 import {
-  SiAutodesk,
+  SiAutodeskmaya,
   SiUnity,
   SiAdobephotoshop,
   SiAdobeillustrator,
@@ -166,7 +166,7 @@ const toolkit = {
     },
   ],
   skillList: [
-    { icon: <SiAutodesk />, name: "Autodesk Maya" },
+    { icon: <SiAutodeskmaya />, name: "Autodesk Maya" },
     { icon: <SiUnity />, name: "Unity" },
     { icon: <FaPaintBrush />, name: "Texturing" },
     { icon: <FaGamepad />, name: "Game Design" },

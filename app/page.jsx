@@ -18,8 +18,11 @@ const Home = () => {
               <span className="text-accent">Barkat Singh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in carious programming languages and technologies.
+              "Combining technical expertise with creative vision, I craft
+              digital experiences that are functional, user-friendly, and
+              visually engaging. Whether building full-stack applications,
+              designing intuitive interfaces, or creating immersive game worlds,
+              I thrive at the intersection of design and technology."
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

@@ -15,9 +15,15 @@ import {
   SiNextdotjs,
   SiJquery,
   SiFirebase,
-  SiAdobecreativecloud,
   SiMysql,
-  SiMongodb,
+  SiAdobeaftereffects,
+  SiUnity,
+  SiCanva,
+  SiAutodeskmaya,
+  SiAdobeindesign,
+  SiAdobeillustrator,
+  SiAdobexd,
+  SiAdobephotoshop,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "/components/ui/tabs";
@@ -35,7 +41,7 @@ import Image from "next/image";
 const about = {
   title: "About Me",
   description:
-    "Hi, I’m Barkat Singh — a Full-Stack Developer and designer with a background in Applied Mathematics and Information Technology from the University of Toronto. My expertise spans HTML/CSS, JavaScript, Node.js, and design tools like Figma, Photoshop, and After Effects. I’ve led agile teams, delivered full-stack projects, and built solutions that are both functional and visually compelling. I thrive in collaborative environments, love solving real-world problems through tech, and constantly seek growth and inspiration. Beyond coding, I enjoy weight training, thrifting, cooking, reading self-help books, and playing poker with friends. Let’s connectand create an impact together!",
+    "Hi, I’m Barkat Singh — a multidisciplinary designer, developer, and creative technologist with a background in Applied Mathematics and Information Technology from the University of Toronto. I specialize in building full-stack applications, designing intuitive user experiences, creating engaging motion graphics, and developing interactive game worlds. My diverse portfolio ranges from web and mobile applications to product designs and immersive game environments, blending technical expertise with creative storytelling. Outside of work, I enjoy weight training, thrifting, cooking, and diving into self-help books and poker nights. Let’s connect to create impactful experiences together!",
 
   info: [
     {
@@ -183,22 +189,25 @@ const skills = {
       icon: <SiMysql></SiMysql>,
       name: "mysql",
     },
-    {
-      icon: <SiMongodb></SiMongodb>,
-      name: "mongodb",
-    },
+
     {
       icon: <FaBootstrap></FaBootstrap>,
       name: "bootstrap",
     },
+
     {
       icon: <FaFigma></FaFigma>,
       name: "figma",
     },
-    {
-      icon: <SiAdobecreativecloud></SiAdobecreativecloud>,
-      name: "Adobe cc",
-    },
+    { icon: <SiAdobexd />, name: "Adobe XD" },
+    { icon: <SiAdobeillustrator />, name: "Illustrator" },
+    { icon: <SiAdobephotoshop />, name: "Photoshop" },
+    { icon: <SiAdobeaftereffects />, name: "After Effects" },
+    { icon: <SiAdobeindesign />, name: "Indesign" },
+
+    { icon: <SiUnity />, name: "Unity" },
+    { icon: <SiAutodeskmaya />, name: "Maya" },
+    { icon: <SiCanva />, name: "Canva" },
   ],
 };
 const About = () => {

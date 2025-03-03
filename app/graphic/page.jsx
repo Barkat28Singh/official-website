@@ -34,7 +34,7 @@ const graphics = [
     num: "01",
     title: "Sweet Teeth GIF",
     description:
-      "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
+      "This animated logo for Sweet Teeth captures the playful, candy-themed identity of the brand. Designed using Adobe Illustrator for the assets and animated in Adobe XD, the GIF features bouncing candies and a whimsical typeface that mimics hand-drawn lettering. The animation brings life to the brand’s fun and friendly personality, enhancing its appeal across social media and digital platforms.",
     image: "/assets/Ads/Sweet_Teeth_GIF.gif",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
     link: "/sweet",
@@ -46,7 +46,7 @@ const graphics = [
     num: "02",
     title: "Sneak Attax Promotion GIF",
     description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+      "This dynamic promotion GIF for Sneak Attax uses bold typography, sneaker imagery, and fast-paced animation to create excitement around new sneaker drops. Built using Photoshop’s timeline feature, the animation blends glitch effects, urban textures, and modern fonts to capture the high-energy culture of sneaker reselling and streetwear enthusiasts.",
     image: "/assets/Ads/anim.gif",
     icon: [<SiAdobephotoshop></SiAdobephotoshop>],
     behance:
@@ -57,7 +57,7 @@ const graphics = [
     num: "03",
     title: "Invitation Cards",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "This series of custom-designed invitation cards showcases a blend of elegant typography, floral illustrations, and modern layouts tailored for various occasions. Designed using Adobe Illustrator and Canva, each card combines personalized elements with professional aesthetics, ensuring they fit both formal and festive events. The designs reflect attention to detail, from color harmony to print-friendly layouts.",
     image: "/assets/Ads/invites.jpg",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiCanva></SiCanva>],
     behance: "https://www.behance.net/gallery/155637239/Invitation-Cards",
@@ -66,26 +66,26 @@ const graphics = [
     num: "04",
     title: "Adobe Splash Banner",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "This vibrant splash banner was designed to promote Adobe Creative Cloud tools, featuring layered geometric shapes, bold gradients, and dynamic text placement. Created using Adobe Illustrator and Adobe XD, the banner highlights key Adobe products while maintaining a balanced composition that catches the viewer’s eye — ideal for web campaigns and event promotions.",
     image: "/assets/Ads/banner1.png",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>, <SiAdobexd></SiAdobexd>],
     behance: "https://www.behance.net/gallery/155635937/Adobe-Splash-Banner",
   },
   {
     num: "05",
-    title: "Digital Art: Pyschedelic Reaping",
+    title: "Digital Art: Psychedelic Reaping",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "Psychedelic Reaping is a bold, surreal digital artwork that blends silhouette art with vibrant, swirling colors. Created in Adobe Illustrator, the piece draws inspiration from psychedelic aesthetics, using intricate gradients and layered shapes to create depth and movement. It reflects my creative exploration of abstract storytelling and visual impact through color theory.",
     image: "/assets/Ads/art2.png",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>],
     behance:
       "https://www.behance.net/gallery/155637917/Pyschedelic-reaping-Silhouette-Digital-Illustration",
   },
   {
-    num: "05",
-    title: "Digital Art: Illumniating Lamps",
+    num: "06",
+    title: "Digital Art: Illuminating Lamps",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "Illuminating Lamps is a minimalist digital illustration created using Adobe Illustrator, blending sharp geometry with soft ambient gradients. The piece focuses on light, shadow, and negative space to evoke a sense of warmth and tranquility. This artwork demonstrates my ability to translate simple concepts into visually captivating designs, combining technical precision with artistic expression.",
     image: "/assets/Ads/art1.png",
     icon: [<SiAdobeillustrator></SiAdobeillustrator>],
     behance:

@@ -9,43 +9,42 @@ const works = [
     num: "01",
     title: "Web Design & Development",
     description: `
-    I offer end-to-end web development services, building responsive, user-friendly websites and full-stack applications using technologies like HTML/CSS, JavaScript, Node.js, and React. From concept to deployment, I ensure seamless functionality and modern design.`,
+      I specialize in building custom, responsive websites and dynamic web applications that blend clean code with visually engaging designs. Leveraging my expertise in HTML, CSS, JavaScript, React, Next.js, and Node.js, I create seamless user experiences optimized for performance across all devices. From concept and wireframing to deployment and optimization, I bring ideas to life with attention to both form and function.`,
     href: "/web",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description: `
-    I create intuitive and engaging user experiences through wireframing, prototyping, and responsive design using Figma, Adobe XD, and Illustrator. My focus is on user-centered designs that enhance usability and aesthetic appeal.`,
+      Through in-depth user research, wireframing, and iterative prototyping, I craft intuitive and visually appealing digital experiences. Using tools like Figma, Adobe XD, and Balsamiq, I focus on accessibility, user flows, and interface clarity to ensure every product is both beautiful and user-friendly. My process combines design thinking and user-centered methodologies to align functionality with aesthetics.`,
     href: "/uxui",
   },
   {
     num: "03",
     title: "Product & Game Design",
     description: `
-    I create intuitive and engaging user experiences through wireframing, prototyping, and responsive design using Figma, Adobe XD, and Illustrator. My focus is on user-centered designs that enhance usability and aesthetic appeal.`,
+      My product design expertise spans from initial research and ideation to physical and digital prototyping, branding, and user testing. In game design, I apply 3D modeling, texturing, level design, and interactive scripting using Maya and Unity. Whether creating innovative products like HydroBag or immersive games like SweetScape, I balance creativity, functionality, and storytelling to deliver engaging user experiences.`,
     href: "/products",
   },
-
   {
     num: "04",
-    title: "Logo Design",
+    title: "Logo & Branding Design",
     description: `
-    I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
+      I design impactful logos and comprehensive branding packages that reflect each client’s unique identity and story. From minimalist corporate logos to playful illustrated marks, I tailor designs to target audiences while ensuring scalability and versatility across digital and print platforms using Adobe Illustrator, Photoshop, and InDesign.`,
     href: "/logos",
   },
   {
     num: "05",
-    title: "Motion Design",
+    title: "Motion Design & Video Editing",
     description: `
-    I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
+      I create visually striking motion graphics, animated advertisements, and promotional videos that blend typography, illustration, and animation. Using Adobe After Effects, Premiere Pro, and Media Encoder, I craft engaging narratives and dynamic visuals that capture attention across social media, websites, and presentations.`,
     href: "/motion",
   },
   {
     num: "06",
-    title: "Graphic Design ",
+    title: "Graphic Design & Visual Assets",
     description: `
-  I design memorable and versatile logos that reflect your brand’s identity. Using tools like Adobe Illustrator and Photoshop, I ensure each logo is tailored to your vision and stands out in any market.`,
+      I produce versatile graphic design assets ranging from social media banners and marketing collateral to complex illustrations and infographics. Combining creative flair with brand consistency, I work across Adobe Illustrator, Photoshop, and Canva to deliver high-quality visuals aligned with strategic goals.`,
     href: "/graphic",
   },
 ];

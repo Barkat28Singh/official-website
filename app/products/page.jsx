@@ -31,9 +31,9 @@ import {
 const products = [
   {
     num: "01",
-    title: "HydroBag-Product Design Pitch",
+    title: "HydroBag - Product Design Pitch",
     description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+      "HydroBag is an eco-conscious, innovation-driven backpack designed to combine sustainability with practicality. Featuring a built-in hydration system, modular compartments, and a waterproof exterior, HydroBag is tailored for students, hikers, and everyday commuters. Designed using Adobe Illustrator and InDesign, this project involved in-depth product research, iterative design processes, and branding development — highlighting my ability to merge product functionality with user-centered aesthetics and eco-friendly messaging.",
     image: "/assets/Ads/pr.png",
     icon: [
       <SiAdobeindesign></SiAdobeindesign>,
@@ -46,9 +46,9 @@ const products = [
   },
   {
     num: "02",
-    title: "HydroSatch-Product Design Pitch",
+    title: "HydroSatch - Product Design Pitch",
     description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+      "HydroSatch is the compact companion to the HydroBag, offering a more portable hydration solution without compromising innovation. This crossbody bag features the same integrated water pouch, alongside a customizable layout, ergonomic straps, and eco-conscious materials. Created through Adobe Illustrator, Photoshop, and InDesign, the HydroSatch pitch highlights my expertise in product evolution, user research, and environmentally responsible design, ensuring both aesthetics and functionality work seamlessly together.",
     image: "/assets/Ads/product2.png",
     icon: [
       <SiAdobeindesign></SiAdobeindesign>,
@@ -61,9 +61,9 @@ const products = [
   },
   {
     num: "03",
-    title: "SweetScape-Character Game Design",
+    title: "SweetScape - Character & Game Design",
     description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+      "SweetScape is a vibrant, candy-themed 3D exploration game that brings playful imagination to life. Players navigate a dessert-inspired world, collecting toffees while overcoming interactive barriers. Developed using Autodesk Maya for 3D modeling and Unity for gameplay programming, the project showcases my expertise in character creation, environment design, texturing, and C# scripting. From concept development and storyboarding to asset design and in-game mechanics, SweetScape represents my ability to blend visual storytelling with immersive user experiences.",
     image: "/assets/Ads/pitchprop.png",
     icon: [
       <SiAutodeskmaya></SiAutodeskmaya>,

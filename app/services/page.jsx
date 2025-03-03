@@ -1,135 +1,120 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "/components/ui/tooltip";
-
-import Link from "next/link";
-
-import Image from "next/image";
-
-import ProjSliderBtns from "/components/ProjSliderBtns";
-
 const services = [
   {
-    category: "Web Development & Design",
-    title: "Front-end + Back-end Development",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+    category: "Full-Stack Web Development & Design",
+    title: "Custom Websites, Web Apps & E-commerce Platforms",
+    description:
+      "I design and develop responsive, user-friendly web applications from concept to deployment. My focus is on clean code, seamless user experiences, and performance optimization using modern frameworks and technologies.",
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "JavaScript" },
+      { name: "React.js" },
+      { name: "Next.js" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MySQL" },
+      { name: "Firebase" },
+      { name: "Tailwind CSS" },
+      { name: "Bootstrap" },
+    ],
   },
-
   {
-    category: "UX/UI Design",
+    category: "UX/UI Design & Research",
     title:
-      "Wireframes + Lofi & HiFi Prototypes + User Personas + UI Kits + UX Mood Boards",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+      "Wireframes, Prototypes, User Flows, Personas, UI Kits & Usability Testing",
+    description:
+      "I specialize in user-centric design, creating intuitive and accessible interfaces rooted in thorough user research. From low-fidelity wireframes to polished, high-fidelity prototypes, I prioritize usability and iterative design processes informed by user feedback.",
+    stack: ["Adobe XD", "Figma", "Balsamiq", "Canva", "Adobe Creative Cloud"],
   },
   {
-    category: "Graphic Design",
-    title: "Logos + Banners + Illustrations + Components + Characters ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+    category: "Graphic & Visual Design",
+    title: "Logos, Branding, Banners, Illustrations & Marketing Assets",
+    description:
+      "I craft visually appealing graphics that align with brand identities and project goals. My designs range from sleek corporate branding to playful illustrations, ensuring creative flexibility across platforms.",
+    stack: ["Adobe Illustrator", "Photoshop", "Canva"],
   },
   {
-    category: "Product Design",
-    title: "User Research + Iterative feedback implementation",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+    category: "Product Design & Development",
+    title: "Concept Development, Prototyping, Iterative Testing & Branding",
+    description:
+      "I take product ideas from research and concept generation to physical or digital prototypes. My process includes detailed user research, usability analysis, branding integration, and iterative refinement for market readiness.",
+    stack: ["Adobe Illustrator", "InDesign", "Adobe XD"],
   },
   {
-    category: "Motion Design",
-    title: "Advertisments + Promotions + Video Editting",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+    category: "Motion Graphics & Video Editing",
+    title: "Animated Ads, Lyric Videos, Promo Videos & Visual Effects",
+    description:
+      "I create engaging motion graphics, from lyric videos to branded promotional content. My process involves storyboarding, asset creation, animation, and post-production editing using industry-standard tools.",
+    stack: [
+      "Adobe After Effects",
+      "Media Encoder",
+      "Illustrator",
+      "Photoshop",
+      "Adobe XD",
+    ],
   },
   {
-    category: "Game Design",
-    title: "3D Modelling + Game Development + Rendering + Texturising",
-    stack: [{ name: "Unity" }, { name: "AutoDesk Maya" }],
-    image: "/assests.png",
-    live: "",
-    github: "",
+    category: "Game Design & 3D Modeling",
+    title: "Level Design, Asset Creation, Environment Design & Interactivity",
+    description:
+      "I design immersive game worlds, combining 3D modeling, texturing, and interactive mechanics. My projects include environment creation, custom character and object modeling, and scripting gameplay logic to enhance player engagement.",
+    stack: ["Unity", "Autodesk Maya", "Adobe Photoshop"],
   },
 ];
 
 const Services = () => {
-  //update service state based on current slide activeIndex
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.3, duration: 0.5, ease: "easeOut" },
       }}
-      className=" flex items-center justify-center"
+      className="min-h-screen py-16  flex items-center justify-center"
     >
-      <div className="container mx-auto">
-        <div className="flex flex-col ">
-          <div className="w-full">
-            {services.map((service, index) => {
-              return (
-                <div className="h-[130px] relative flex-col flex justify-center items-center bg-[#27272c]">
-                  {/* overlay */}
-                  {/* image */}
-                  {/* <div className="relative w-full h-full">
-                    <Image
-                      src={service.image}
-                      fill
-                      className="object-cover"
-                      alt=""
-                    ></Image>
-                  </div> */}
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+          My Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-[#27272c] rounded-lg shadow-lg p-8 flex flex-col gap-4 transform hover:scale-[1.02] transition-transform duration-300"
+            >
+              {/* Category */}
+              <h3 className="text-2xl font-bold text-accent">
+                {service.category}
+              </h3>
 
-                  {/* service category heading */}
-                  <h2 className="xl:text-[42px] md:text-[30px] flex font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                    {service.category}
-                  </h2>
-                  <div className="flex p-5">
-                    <h3 className=" flex leading-none text-accent group-hover:text-white transition-all duration-500 capitalize  text-center">
-                      {service.title}
-                    </h3>
-                  </div>
+              {/* Title */}
+              <h4 className="text-lg font-semibold text-white">
+                {service.title}
+              </h4>
 
-                  {/* service description */}
-                  <p className="text-white/60">{service.description}</p>
-                </div>
-              );
-            })}
-            {/* buttons */}
-          </div>
+              {/* Description */}
+              <p className="text-white/60 text-sm">{service.description}</p>
 
-          {/* service outline num */}
-
-          {/* border */}
-          <div className="border border-white/20"></div>
-          {/* buttons */}
-
-          {/* </div>
-          </div> */}
+              {/* Stack */}
+              <div className="flex flex-wrap gap-2 mt-4">
+                {service.stack.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="text-xs uppercase tracking-wide bg-white/10 text-white/70 py-1 px-3 rounded-full"
+                  >
+                    {typeof tech === "string" ? tech : tech.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </motion.section>
@@ -137,34 +122,3 @@ const Services = () => {
 };
 
 export default Services;
-
-// <div className="flex items-center gap-4">
-{
-  /*  live service button*/
-}
-//   <Link href={"/"}>
-//     <TooltipProvider delayDuration={100}>
-//       <Tooltip>
-//         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-//           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
-//         </TooltipTrigger>
-//         <TooltipContent>
-//           <p>See More</p>
-//         </TooltipContent>
-//       </Tooltip>
-//     </TooltipProvider>
-//   </Link>
-//   {/*  github service button*/}
-//   <Link href={"/"}>
-//     <TooltipProvider delayDuration={100}>
-//       <Tooltip>
-//         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-//           <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
-//         </TooltipTrigger>
-//         <TooltipContent>
-//           <p>Github Repository</p>
-//         </TooltipContent>
-//       </Tooltip>
-//     </TooltipProvider>
-//   </Link>
-//

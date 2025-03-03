@@ -33,9 +33,9 @@ import { FaBootstrap, FaHtml5, FaWix } from "react-icons/fa";
 const webworks = [
   {
     num: "01",
-    title: "SweetTeeth",
+    title: "Sweet Teeth",
     description:
-      "The Cherry Closet logo features a playful and modern design with a handwritten script for 'Cherry' and a textured, vintage-style font for 'closet,'' where the 'o' is creatively replaced with a cherry icon. A pair of vibrant red cherries and a mint green circular backdrop with a bite-like cutout add depth and charm. The contrasting fonts and colors create a stylish, approachable, and memorable visual identity, perfect for a trendy and fashion-forward brand.",
+      "Sweet Teeth is a vibrant, candy-themed e-commerce platform designed to captivate users with playful aesthetics while delivering a seamless shopping experience. The platform features a responsive design, interactive product filtering, personalized user accounts, and smooth checkout functionality. Custom candy illustrations and pastel design elements enhance visual appeal, while my full-stack development ensures the site’s scalability and performance. This project highlights my expertise in front-end design, back-end development, and creative branding.",
     image: "/assets/Web/sweet.png",
     icon: [
       <FaHtml5></FaHtml5>,
@@ -52,7 +52,7 @@ const webworks = [
     num: "02",
     title: "FilmBucket",
     description:
-      "These logos feature the initials 'BS' in a bold, modern serif typeface with overlapping letters and layered shades. The blue variant uses a dark navy circle backdrop with gradient blues, giving it a professional and tech-forward look. The orange variant contrasts with warm oranges and a dark gray background, creating a vibrant and energetic feel. Both versions emphasize versatility with color options that cater to different brand moods while maintaining consistency through typography and structure",
+      "FilmBucket is a comprehensive entertainment discovery platform inspired by IMDb, where users can explore movies, TV shows, and actor profiles. I developed this platform using the MVC architectural pattern with a seamless blend of front-end and back-end components. Features include real-time movie data fetching, actor filmographies, personalized profiles, and interactive movie trivia. This project highlights my ability to integrate APIs, manage complex data flows, and design intuitive user experiences.",
     image: "/assets/Web/film.png",
     icon: [
       <FaHtml5></FaHtml5>,
@@ -65,18 +65,16 @@ const webworks = [
     github: "https://github.com/Barkat28Singh/Filmbucket",
     behance: "https://www.behance.net/gallery/220142571/FilmBucket-Project",
   },
-
   {
     num: "03",
     title: "Recipe Roadmap",
     description:
-      "This minimalist logo uses a vertical monogram layout, stacking the letters 'B' and 'S' with a slanted alignment. The black typography over a soft gray rounded rectangle background creates a sophisticated and timeless design. Its simplicity and clean lines make it highly adaptable for both print and digital use, lending itself to a high-end or corporate brand identity.",
+      "Recipe Roadmap is a collaborative platform designed to simplify meal planning and recipe discovery. Built using Node.js, MySQL, and JavaScript, the platform allows users to explore recipes, save favorites, and contribute their own dishes. It also includes user authentication, ingredient-based filtering, and dynamic content loading for smooth browsing. This project emphasizes my skills in full-stack development, database management, and creating user-friendly experiences centered around content sharing.",
     image: "/assets/Web/recipe.png",
     icon: [
       <SiJavascript></SiJavascript>,
       <SiMysql></SiMysql>,
       <SiNodedotjs></SiNodedotjs>,
-      ,
     ],
     link: "/recipe",
     github: "https://github.com/Barkat28Singh/Roadmap-Recipe.git",
@@ -85,7 +83,7 @@ const webworks = [
     num: "04",
     title: "Butterfly",
     description:
-      "This vibrant version of the BS monogram uses a bold palette of orange, magenta, deep purple, and red. The geometric background retains the triangular layering, adding dimension, while the bright orange backdrop injects energy and warmth. The interplay of magenta outlines and purple typography brings a modern, creative touch, making it ideal for brands in fashion, media, or the creative arts seeking to make a bold, dynamic statement.",
+      "Butterfly is a mobile-responsive web application designed to connect individuals with mental health resources through personalized journeys and interactive content. The platform, built using Firebase, Node.js, and JavaScript, offers guided self-reflection exercises, resource recommendations, and progress tracking. This project underscores my capabilities in front-end design, back-end architecture, and working with real-time databases to enhance user experiences in wellness-oriented platforms.",
     image: "/assets/Web/butterfly.png",
     icon: [
       <SiJavascript></SiJavascript>,
@@ -97,14 +95,14 @@ const webworks = [
   },
   {
     num: "05",
-    title: "Open Design Collaboratory(ODC)",
+    title: "Open Design Collaboratory (ODC)",
     description:
-      "This logo presents a modern and sophisticated BS monogram, vertically aligned with a bold serif font. The geometric background features layered triangles in varying shades of gray, creating a sense of depth and dynamism. The white negative space enhances the visual impact, while the monochrome palette provides versatility and a professional, minimalist feel. This design is well-suited for corporate, architectural, or design-focused brands seeking a sleek and contemporary identity.",
+      "Open Design Collaboratory (ODC) is a collaborative platform built using Wix and custom code integrations to showcase design projects, host community events, and foster creative collaboration. The site features a curated gallery, project submission forms, and member directories. My role spanned design strategy, content architecture, and front-end implementation, combining my UX design sensibility with hands-on web development skills.",
     image: "/assets/Web/odc.png",
     icon: [<FaWix></FaWix>, <FaHtml5></FaHtml5>, <SiCss3></SiCss3>],
     link: "/odc",
     behance:
-      "https://www.behance.net/gallery/155638459/Sweet-Teeth-Candy-Project",
+      "https://www.behance.net/gallery/220141349/Open-Design-Collaboratory",
   },
 ];
 
