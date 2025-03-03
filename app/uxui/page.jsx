@@ -7,6 +7,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "/components/ui/tooltip";
+
 import {
   SiAdobephotoshop,
   SiAdobexd,
@@ -55,7 +56,7 @@ const designs = [
     description:
       "This Zara website remake focuses on enhancing the e-commerce shopping experience through clean Lo-Fi wireframes and structured layouts. Key features include an improved product page with a large image carousel, detailed reviews section, and options to complete the look with complementary products. The leave a review flow is streamlined with a user-friendly form and verification process. Post-submission, users are greeted with a thank-you page and suggested products, encouraging continued engagement. The design prioritizes clarity, easy navigation, and accessibility while maintaining Zara’s minimalist branding.",
     image: "/assets/UIUX/zara.png",
-    icon: <SiCanva></SiCanva>,
+    icon: <SiCanva />,
     link: "/zara",
     behance: "https://www.behance.net/gallery/220144159/Zara-Revamp-Prototype",
   },

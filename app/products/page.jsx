@@ -15,8 +15,6 @@ import React, { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import ReactPlayer from "react-player";
-
 import "swiper/css";
 
 import Image from "next/image";
@@ -42,7 +40,7 @@ const products = [
       <SiAdobeillustrator></SiAdobeillustrator>,
       <SiAdobephotoshop></SiAdobephotoshop>,
     ],
-    link: "/product",
+    link: "/hydro",
     behance:
       "https://www.behance.net/gallery/220134825/Product-Design-HydroBag-HydroSatch",
   },
@@ -57,7 +55,7 @@ const products = [
       <SiAdobeillustrator></SiAdobeillustrator>,
       <SiAdobephotoshop></SiAdobephotoshop>,
     ],
-    link: "/product",
+    link: "/hydro",
     behance:
       "https://www.behance.net/gallery/220134825/Product-Design-HydroBag-HydroSatch",
   },
