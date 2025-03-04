@@ -28,10 +28,12 @@ const about = {
       fieldName: "My Role",
       fieldValue:
         "Solo Full-Stack Developer — Responsible for design, development, and deployment.",
+      image: "/assets/RecipeRoadmap/1.png",
     },
     {
       fieldName: "Team Members",
       fieldValue: "Independent Project (1 Member)",
+      image: "/assets/RecipeRoadmap/2.png",
     },
     {
       fieldName: "Methodology Used",
@@ -78,6 +80,7 @@ const process = {
       step: "🚀 Final Deployment & Optimization",
       description:
         "RecipeRoadmap was deployed as a lightweight, responsive web app, designed to work smoothly on both desktops and mobile devices. Final optimizations included security enhancements to prevent SQL injection, input sanitization, and performance tuning to ensure that even large recipe databases load quickly. Plans for future enhancements include user authentication and collaborative recipe sharing.",
+      image: "/assets/RecipeRoadmap/1.png",
     },
   ],
 };
@@ -90,12 +93,14 @@ const features = {
       feature: "📝 Recipe Creation & Organization",
       description:
         "Users can easily create and store recipes, complete with ingredients, preparation steps, and optional images. Each entry can be categorized, allowing for intuitive organization (e.g., Desserts, Appetizers, Main Courses).",
+      image: "/assets/RecipeRoadmap/3.png",
     },
     {
       num: "2.",
       feature: "✏️ Full CRUD Functionality",
       description:
         "Every recipe can be edited to add new ingredients, adjust cooking times, or incorporate new techniques. Outdated recipes can be deleted with a single click, ensuring the digital recipe box stays current.",
+      image: "/assets/RecipeRoadmap/2.png",
     },
     {
       num: "3.",
@@ -168,7 +173,7 @@ const RecipeRoadmap = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className=" flex items-center justify-center py-12"
+      className="flex items-center justify-center py-12"
     >
       <div className="container mx-auto">
         {/* Back Button */}
@@ -193,35 +198,13 @@ const RecipeRoadmap = () => {
           defaultValue="about"
           className="flex flex-col xl:flex-row gap-[80px]"
         >
-          {/* Sidebar Navigation */}
           <TabsList className="flex flex-col gap-8">
-            <TabsTrigger
-              className=" data-[state=active]:text-accent"
-              value="about"
-            >
-              About
-            </TabsTrigger>
-            <TabsTrigger
-              className=" data-[state=active]:text-accent"
-              value="progression"
-            >
-              Process
-            </TabsTrigger>
-            <TabsTrigger
-              className=" data-[state=active]:text-accent"
-              value="features"
-            >
-              Features
-            </TabsTrigger>
-            <TabsTrigger
-              className=" data-[state=active]:text-accent"
-              value="toolkit"
-            >
-              Toolkit
-            </TabsTrigger>
+            <TabsTrigger value="about">About</TabsTrigger>
+            <TabsTrigger value="progression">Process</TabsTrigger>
+            <TabsTrigger value="features">Features</TabsTrigger>
+            <TabsTrigger value="toolkit">Toolkit</TabsTrigger>
           </TabsList>
 
-          {/* Tab Contents */}
           <div className="w-full">
             {/* About Section */}
             <TabsContent
@@ -229,27 +212,24 @@ const RecipeRoadmap = () => {
               className="flex flex-col xl:flex-row gap-8"
             >
               <div className="flex flex-col gap-6 w-full xl:w-1/2">
-                <h3 className="xl:text-3xl text-center text-2xl font-bold mb-6  ">
+                <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center">
                   {about.title}
                 </h3>
                 <p className="text-white/60">{about.description}</p>
                 <ul className="flex flex-col gap-2">
                   {about.info.map((item, index) => (
                     <li key={index}>
-                      <span className="text-accent text-md ">
-                        {item.fieldName}:
-                      </span>
-                      <span className="text-sm"> {item.fieldValue}</span>
+                      <span className="text-accent">{item.fieldName}:</span>
+                      <span> {item.fieldValue}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* About Images */}
+              {/* Images - only render if they exist */}
               <div className="grid gap-3 xl:w-1/2">
-                {about.info
-                  .filter((item) => item.image)
-                  .map((item, index) => (
+                {about.info.map((item, index) =>
+                  item.image ? (
                     <div
                       key={index}
                       className="bg-[#232329] rounded-xl flex justify-center items-center"
@@ -259,16 +239,17 @@ const RecipeRoadmap = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg object-cover h-[350px]"
                       />
                     </div>
-                  ))}
+                  ) : null
+                )}
               </div>
             </TabsContent>
 
             {/* Process Section */}
-            <TabsContent value="progression" className="tabs-content">
-              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+            <TabsContent value="progression">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center">
                 {process.title1}
               </h3>
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -282,17 +263,21 @@ const RecipeRoadmap = () => {
                     </span>
                     <h4 className="text-xl font-bold">{item.step}</h4>
                     <p className="text-white/60">{item.description}</p>
-                    <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center w-full">
-                      <Image
-                        src={item.image}
-                        alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
-                        width={400}
-                        height={200}
-                        className="rounded-lg h-[300px] object-cover"
-                      />
-                    </div>
 
-                    {/* Video - Only show if video exists */}
+                    {/* Conditional image display */}
+                    {item.image && (
+                      <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
+                        <Image
+                          src={item.image}
+                          alt={item.step}
+                          width={400}
+                          height={200}
+                          className="rounded-lg h-[300px] object-cover"
+                        />
+                      </div>
+                    )}
+
+                    {/* Conditional video display */}
                     {item.video && (
                       <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
                         <ReactPlayer
@@ -300,11 +285,6 @@ const RecipeRoadmap = () => {
                           controls
                           width="100%"
                           height="100%"
-                          style={{
-                            maxHeight: "350px",
-                            objectFit: "contain",
-                            pointerEvents: "auto",
-                          }}
                         />
                       </div>
                     )}
@@ -315,7 +295,7 @@ const RecipeRoadmap = () => {
 
             {/* Features Section */}
             <TabsContent value="features">
-              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center">
                 {features.title}
               </h3>
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -330,35 +310,30 @@ const RecipeRoadmap = () => {
                     <h4 className="text-xl font-bold">{item.feature}</h4>
                     <p className="text-white/60">{item.description}</p>
 
-                    <div className="flex flex-col gap-4">
-                      {/* Image */}
+                    {/* Conditional image display */}
+                    {item.image && (
                       <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
                         <Image
                           src={item.image}
-                          alt={item.feature || "Sweet Teeth Feature Image"}
+                          alt={item.feature}
                           width={400}
                           height={200}
                           className="rounded-lg h-[300px] object-cover"
                         />
                       </div>
+                    )}
 
-                      {/* Video - Only show if video exists */}
-                      {item.video && (
-                        <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
-                          <ReactPlayer
-                            url={item.video}
-                            controls
-                            width="100%"
-                            height="100%"
-                            style={{
-                              maxHeight: "350px",
-                              objectFit: "contain",
-                              pointerEvents: "auto",
-                            }}
-                          />
-                        </div>
-                      )}
-                    </div>
+                    {/* Conditional video display */}
+                    {item.video && (
+                      <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center">
+                        <ReactPlayer
+                          url={item.video}
+                          controls
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -366,7 +341,7 @@ const RecipeRoadmap = () => {
 
             {/* Toolkit Section */}
             <TabsContent value="toolkit">
-              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center ">
+              <h3 className="xl:text-3xl text-2xl font-bold mb-6 text-center">
                 {toolkit.title}
               </h3>
               <div className="flex flex-col gap-6">
@@ -378,7 +353,7 @@ const RecipeRoadmap = () => {
                 ))}
               </div>
 
-              {/* Skills Grid */}
+              {/* Skills */}
               <h4 className="text-2xl font-bold mt-6 mb-4">
                 Technologies & Tools
               </h4>
@@ -386,13 +361,13 @@ const RecipeRoadmap = () => {
                 {toolkit.skillList.map((skill, index) => (
                   <TooltipProvider key={index}>
                     <Tooltip>
-                      <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                      <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center">
                         <div className="text-5xl group-hover:text-accent transition-all duration-100">
                           {skill.icon}
                         </div>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p className="capitalize">{skill.name}</p>
+                        <p>{skill.name}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

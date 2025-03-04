@@ -27,11 +27,13 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "Back-End Developer",
+      image: "/assets/Butterfly/1.png",
     },
     {
       fieldName: "Team Members",
       fieldValue:
         "2 Members — Collaborated closely with a Front-End Developer to build user-centric features and ensure seamless integration.",
+      image: "/assets/Butterfly/2.png",
     },
     {
       fieldName: "Methodology Used",
@@ -53,30 +55,35 @@ const process = {
       step: "📚 Research & Conceptualization",
       description:
         "The project started with research into emerging social platforms, analyzing gaps in creative self-expression and file-sharing capabilities. Our goal was to build a hybrid social-media-meets-content-platform, where users could share images, PDFs, and artwork in a single space. This was supported by research on how platforms like Instagram limit content formats, creating opportunities for innovation.",
+      image: "/assets/Butterfly/3.png",
     },
     {
       num: "2.",
       step: "📝 Wireframing & User Flow Design",
       description:
         "Working closely with the Front-End Developer, we mapped out the entire user flow, from account creation to uploading content and joining discussions. Wireframes were built using Adobe XD, focusing on simplicity, creativity, and multi-file support. Special attention was given to the user dashboard, ensuring smooth file management across formats.",
+      image: "/assets/Butterfly/4.png",
     },
     {
       num: "3.",
       step: "💻 Back-End Development & Database Integration",
       description:
         "The back-end was built using Node.js and Express.js, managing user accounts, file uploads, and chat history storage. User authentication and authorization were powered by Firebase Authentication, enabling login via Google, Facebook, and email/password. The chat system and user content storage leveraged MySQL, implementing full CRUD operations for editing, deleting, and updating posts and messages.",
+      image: "/assets/Butterfly/5.png",
     },
     {
       num: "4.",
       step: "💬 Real-Time Discussion Group & Topic Generator",
       description:
         "A unique feature of Butterfly is its 'Topic of the Day' discussion group, which challenges users to engage with randomly generated conversation prompts. Topics are pulled from a curated list of philosophical, cultural, and trending questions, fostering curiosity and cross-cultural exchange. This feature was powered by server-side logic in Node.js, dynamically serving new topics each day.",
+      image: "/assets/Butterfly/6.png",
     },
     {
       num: "5.",
       step: "🚀 Testing, Refinement & Deployment",
       description:
         "Thorough testing ensured seamless file uploads, correct file-type validation, and robust real-time chat functionality. Performance optimization included caching user profiles and reducing database query redundancy. Following successful beta testing, Butterfly was deployed as a responsive web app, with future plans to expand into mobile platforms.",
+      image: "/assets/Butterfly/1.png",
     },
   ],
 };
@@ -89,30 +96,35 @@ const features = {
       feature: "📂 Multi-Format Upload Dashboard",
       description:
         "Users can upload and showcase a wide variety of content formats — from standard images to PDFs, digital artwork, and creative documents — directly on their profiles and the public feed, encouraging multidisciplinary creativity.",
+      image: "/assets/Butterfly/5.png",
     },
     {
       num: "2.",
       feature: "🔐 Flexible Multi-Platform Authentication",
       description:
         "Sign-in and Sign-out powered by Firebase Authentication, supporting seamless login via Google, Facebook, and email/password, ensuring secure and flexible user access.",
+      image: "/assets/Butterfly/7.png",
     },
     {
       num: "3.",
       feature: "💬 Random 'Topic of the Day' Discussion Group",
       description:
         "Users can join daily discussions on randomly selected topics — ranging from deep philosophical questions to trending cultural debates — fostering intellectual curiosity and community bonding.",
+      image: "/assets/Butterfly/6.png",
     },
     {
       num: "4.",
       feature: "🗂️ Real-Time CRUD Chat System",
       description:
         "A fully functional chat system allows users to send, edit, and delete messages in real-time. Messages are stored in MySQL, enabling persistent chat history with user-friendly interfaces.",
+      image: "/assets/Butterfly/6.png",
     },
     {
       num: "5.",
       feature: "🤖 AI-Powered Chatbot Support",
       description:
         "A 'Contact Us' page offers users direct interaction with Butterfly's chatbot, providing assistance, answering FAQs, and enhancing user engagement with conversational AI elements.",
+      image: "/assets/Butterfly/2.png",
     },
   ],
 };
@@ -256,7 +268,7 @@ const Butterfly = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg, object-cover h-[350px]"
                       />
                     </div>
                   ))}

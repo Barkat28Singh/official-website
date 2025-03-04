@@ -27,22 +27,21 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "Tech Lead, Full-Stack Developer, UX/UI Designer",
+      image: "/assets/FilmBucket/team.png",
     },
     {
       fieldName: "Team Members",
       fieldValue:
         "3 Members — Collaborated on design, development, and research.",
-      image: "/assets/FilmBucket/team.png",
+      image: "/assets/FilmBucket/methodology.png",
     },
     {
       fieldName: "Methodology Used",
       fieldValue: "Waterfall — Sequential process from planning to deployment.",
-      image: "/assets/FilmBucket/methodology.png",
     },
     {
       fieldName: "Location",
       fieldValue: "Humber College North - Etobicoke, ON, Canada",
-      image: "/assets/FilmBucket/location.png",
     },
   ],
 };
@@ -267,7 +266,7 @@ const FilmBucket = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg object-contain"
                       />
                     </div>
                   ))}
@@ -296,7 +295,7 @@ const FilmBucket = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[350px] object-cover"
                       />
                     </div>
 
@@ -346,7 +345,7 @@ const FilmBucket = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[350px] object-cover"
                         />
                       </div>
 

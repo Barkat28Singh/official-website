@@ -28,11 +28,13 @@ const about = {
       fieldName: "My Role",
       fieldValue:
         "Solo Designer & Developer — Platform Design, UX/UI, Content Curation, and Development (Wix).",
+      image: "/assets/ODC/1.png",
     },
     {
       fieldName: "Target Audience",
       fieldValue:
         "CCIT Students at UTM — with a broader goal of welcoming all design enthusiasts across disciplines.",
+      image: "/assets/ODC/6.png",
     },
     {
       fieldName: "Methodology Used",
@@ -91,30 +93,35 @@ const features = {
       feature: "3D Virtual Lab Tour",
       description:
         "Students can explore the physical ODC lab space through an interactive 3D tour, allowing them to familiarize themselves with equipment locations and spatial layout before stepping into the lab.",
+      image: "/assets/ODC/7.jpg",
     },
     {
       num: "2.",
       feature: "Equipment Manuals & How-To Videos",
       description:
         "Each piece of equipment has a dedicated page featuring visual guides, step-by-step manuals, and student-created tutorial videos, ensuring students feel prepared and confident using any tool.",
+      image: "/assets/ODC/4.png",
     },
     {
       num: "3.",
       feature: "Student Project Gallery",
       description:
         "An evolving gallery showcases completed student projects, demonstrating creative possibilities and providing real-life inspiration for future designers. Projects span disciplines, from graphic design to product prototypes.",
+      image: "/assets/ODC/3.png",
     },
     {
       num: "4.",
       feature: "Events Calendar & Workshop Registration",
       description:
         "Students can browse upcoming workshops, design challenges, and collaborative projects, with easy online registration using an integrated Google Calendar system.",
+      image: "/assets/ODC/5.png",
     },
     {
       num: "5.",
       feature: "AI Chatbot Assistance",
       description:
         "A built-in chatbot provides real-time answers to questions about equipment, lab policies, and design techniques — offering students instant support whenever needed.",
+      image: "/assets/ODC/6.png",
     },
   ],
 };
@@ -257,7 +264,7 @@ const ODC = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg object-cover h-[350px]"
                       />
                     </div>
                   ))}
@@ -280,15 +287,6 @@ const ODC = () => {
                     </span>
                     <h4 className="text-xl font-bold">{item.step}</h4>
                     <p className="text-white/60">{item.description}</p>
-                    <div className="bg-[#1a1a1a] p-2 rounded-xl flex justify-center items-center w-full">
-                      <Image
-                        src={item.image}
-                        alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
-                        width={400}
-                        height={200}
-                        className="rounded-lg h-[300px] object-cover"
-                      />
-                    </div>
 
                     {/* Video - Only show if video exists */}
                     {item.video && (
@@ -336,7 +334,7 @@ const ODC = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[350px] object-cover"
                         />
                       </div>
 
