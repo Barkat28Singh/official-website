@@ -28,23 +28,21 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "UX/UI Designer, Researcher",
+      image: "/assets/Wikipedia/launch.png",
     },
     {
       fieldName: "Team Members",
       fieldValue:
         "3 Members — Collaborated on wireframes, research, and interactive prototyping.",
-      image: "/assets/Wikipedia/team.png",
     },
     {
       fieldName: "Methodology Used",
       fieldValue:
         "Iterative Design — Research, Wireframing, Prototyping, and Usability Testing.",
-      image: "/assets/Wikipedia/methodology.png",
     },
     {
       fieldName: "Location",
       fieldValue: "University of Toronto - Mississauga, ON, Canada",
-      image: "/assets/Wikipedia/location.png",
     },
   ],
 };
@@ -126,7 +124,7 @@ const features = {
       feature: "🛠️ Interactive Editing & Contribution Tools",
       description:
         "Redesigned the ‘Edit’ and ‘Create Page’ interfaces to provide a smoother editing experience, incorporating real-time feedback mechanisms and improved form design.",
-      image: "/assets/Wikipedia/editing.png",
+      image: "/assets/Wikipedia/editting.png",
     },
   ],
 };
@@ -267,7 +265,7 @@ const Wiki = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg object-contain h[350px]"
                       />
                     </div>
                   ))}
@@ -296,7 +294,7 @@ const Wiki = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg object-contain h[350px]"
                       />
                     </div>
 
@@ -346,7 +344,7 @@ const Wiki = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg object-contain h[350px]"
                         />
                       </div>
 

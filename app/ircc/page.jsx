@@ -28,11 +28,13 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "UX/UI Designer & Researcher",
+      image: "/assets/IRCC/1.png",
     },
     {
       fieldName: "Team Members",
       fieldValue:
         "3 Members — Collaborated on user research, content analysis, wireframing, and prototyping.",
+      image: "/assets/IRCC/3.png",
     },
     {
       fieldName: "Methodology Used",
@@ -54,30 +56,35 @@ const process = {
       step: "📚 Research & Problem Identification",
       description:
         "We conducted content audits using Screaming Frog and performed extensive user research through interviews, observations, and secondary data analysis (including Reddit discussions). Users reported frustration with excessive content, overwhelming navigation, lack of accessibility, and redundant page structures. This research formed the foundation for the redesign strategy.",
+      image: "/assets/IRCC/2.png",
     },
     {
       num: "2.",
       step: "📝 Wireframing & Prototyping",
       description:
         "We developed low-fidelity wireframes using Balsamiq, followed by high-fidelity prototypes in Adobe XD. Key focuses included restructuring the global navigation bar into a horizontal format, simplifying the homepage layout, and ensuring key services like application forms and processing times were easily accessible without deep link chains.",
+      image: "/assets/IRCC/3.png",
     },
     {
       num: "3.",
       step: "🌍 Accessibility & Multilingual Features",
       description:
         "The new design added critical accessibility features including a language selector with diverse translation options, text resizing tools, and background contrast adjustment. These enhancements catered to users with visual impairments and non-English speakers, reflecting Canada's diverse population.",
+      image: "/assets/IRCC/4.png",
     },
     {
       num: "4.",
       step: "🤖 AI Chatbot Integration",
       description:
         "We replaced the confusing search bar with a conversational AI chatbot that guides users directly to the pages and resources they need, reducing time spent navigating through excessive links and irrelevant content.",
+      image: "/assets/IRCC/5.png",
     },
     {
       num: "5.",
       step: "📊 Usability Testing & Refinement",
       description:
         "The team conducted usability tests on the redesigned prototype, gathering feedback from students, new immigrants, and legal professionals. Their feedback validated improvements in navigation, reduced cognitive overload, and the effectiveness of the new accessibility features.",
+      image: "/assets/IRCC/6.png",
     },
   ],
 };
@@ -90,30 +97,28 @@ const features = {
       feature: "🌐 Horizontal Global Navigation Bar",
       description:
         "The previous vertical navigation was replaced with a user-friendly horizontal menu, improving visibility and reducing content overlap. Subcategories were refined and redundant sections removed.",
+      image: "/assets/IRCC/7.png",
     },
     {
       num: "2.",
       feature: "📣 AI-Powered Chatbot",
       description:
         "A custom chatbot acts as a smart search assistant, allowing users to type queries and receive direct links to relevant forms, documents, and resources — eliminating the need for multi-step navigation.",
+      image: "/assets/IRCC/5.png",
     },
     {
       num: "3.",
       feature: "♿ Comprehensive Accessibility Tools",
       description:
         "The redesign includes a toolbar for font resizing, background color adjustment, and language translation into multiple languages beyond English and French — improving inclusivity for diverse audiences.",
+      image: "/assets/IRCC/6.png",
     },
     {
       num: "4.",
       feature: "📂 Streamlined Information Architecture",
       description:
         "Redundant pages were removed, subcategories were re-labeled with clearer titles, and critical sections like 'Processing Times' and 'Application Forms' were moved to the homepage for quick access.",
-    },
-    {
-      num: "5.",
-      feature: "📱 Mobile-Responsive Redesign",
-      description:
-        "The entire prototype was designed to be fully responsive, ensuring smooth navigation and usability across desktop, tablet, and mobile devices.",
+      image: "/assets/IRCC/8.png",
     },
   ],
 };
@@ -257,7 +262,7 @@ const IRCC = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg object-cover"
                       />
                     </div>
                   ))}
@@ -286,7 +291,7 @@ const IRCC = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[500px] object-contain"
                       />
                     </div>
 
@@ -336,7 +341,7 @@ const IRCC = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[500px] object-contain"
                         />
                       </div>
 

@@ -27,6 +27,7 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "UX/UI Researcher & Designer",
+      image: "/assets/Zara/final.png",
     },
     {
       fieldName: "Team Members",
@@ -291,7 +292,7 @@ const Zara = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[500px] object-contain"
                       />
                     </div>
 
@@ -341,7 +342,7 @@ const Zara = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[500px] object-contain"
                         />
                       </div>
 
