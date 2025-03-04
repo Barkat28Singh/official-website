@@ -33,10 +33,12 @@ const about = {
     {
       fieldName: "My Role",
       fieldValue: "Product Designer, Illustrator & Brand Developer",
+      image: "/assets/Hydro/1.png",
     },
     {
       fieldName: "Team Members",
       fieldValue: "Independent Project — Solo Execution",
+      image: "/assets/Hydro/2.png",
     },
     {
       fieldName: "Methodology Used",
@@ -58,30 +60,36 @@ const process = {
       step: "🔎 Research & Ideation",
       description:
         "The process began with identifying the need for more convenient hydration solutions for students, commuters, and fashion enthusiasts. Research covered ergonomic product design, competitor analysis (hydration packs and satchels), and user surveys to understand preferences around bag styles, water capacity, and portability.",
+      image: "/assets/Hydro/3.png",
     },
     {
       num: "2.",
       step: "✏️ Initial Sketches & Concept Development",
       description:
         "Multiple preliminary concepts were sketched, ranging from conventional hydration backpacks to futuristic metallic waist bags. Each concept explored form, functionality, and aesthetic appeal. The HydroBag evolved into a leather school bag with hidden hydration capabilities, while the HydroSatchel fused fashion-forward metallic finishes with functional water storage.",
+      image: "/assets/Hydro/4.png",
     },
     {
       num: "3.",
       step: "🛠️ Prototyping & Material Exploration",
       description:
         "Detailed mockups were created in Adobe Illustrator, mapping the positioning of water bladders, straw systems, and attachment mechanisms. Material exploration focused on durable leather, lightweight aluminum, and BPA-free plastic for safe water storage.",
+      image: "/assets/Hydro/5.png",
     },
     {
       num: "4.",
       step: "🎨 Branding & Presentation Design",
       description:
         "Both products were branded to appeal to distinct audiences — HydroBag for students and daily commuters, HydroSatchel for fashion enthusiasts. Branding elements, including typography, color palettes, and product descriptions, were developed in Adobe InDesign and compiled into a final digital pitch deck and EPUB presentation.",
+      image: "/assets/Hydro/7.png",
+      video: "/assets/Hydro/8.mp4",
     },
     {
       num: "5.",
       step: "🚀 Final Design & Pitch",
       description:
         "The final presentation showcased product functionality, visual appeal, user personas, and the innovative fusion of hydration and everyday carry items. The project highlights the importance of user-centered design, multi-functionality, and aesthetics in modern product development.",
+      image: "/assets/Hydro/1.png",
     },
   ],
 };
@@ -94,30 +102,37 @@ const features = {
       feature: "💼 HydroBag - Integrated Hydration Backpack",
       description:
         "A leather backpack with a built-in 2L water bladder and detachable sipper straw, keeping hydration discreet yet accessible for students and commuters.",
+      image: "/assets/Hydro/1.png",
     },
+
     {
       num: "2.",
       feature: "✨ HydroSatchel - Fashion-Forward Hydration Waist Bag",
       description:
         "A sleek metallic waist satchel with a 1L detachable aluminum water container, offering hydration without compromising on style.",
+      image: "/assets/Hydro/2.png",
     },
     {
       num: "3.",
       feature: "🛠️ Modular & Easy-to-Clean Components",
       description:
         "Detachable straw, stopper, and sipper for easy cleaning and maintenance, ensuring hygiene and reusability.",
+      image: "/assets/Hydro/6.png",
     },
+
     {
       num: "4.",
       feature: "🎒 Multi-Compartment Storage",
       description:
         "HydroBag includes 5 compartments for books, electronics, and stationery, while HydroSatchel balances storage for essentials with integrated hydration.",
+      image: "/assets/Hydro/5.png",
     },
     {
       num: "5.",
       feature: "🌱 Eco-Friendly & Space-Saving",
       description:
         "By eliminating the need for separate disposable bottles, the designs reduce plastic waste and free up internal bag space for other essentials.",
+      image: "/assets/Hydro/7.png",
     },
   ],
 };
@@ -288,7 +303,7 @@ const Hydro = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[300px] object-contain"
                       />
                     </div>
 

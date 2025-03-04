@@ -33,23 +33,22 @@ const about = {
       fieldName: "My Role",
       fieldValue:
         "Game Designer, 3D Modeler, Storyteller, Environment Artist, Gameplay Programmer",
+      image: "/assets/SweetScape/team.png",
     },
     {
       fieldName: "Team Members",
       fieldValue:
         "Independent Project — Designed and developed all elements solo.",
-      image: "/assets/SweetScape/team.png",
+      image: "/assets/SweetScape/methodology.png",
     },
     {
       fieldName: "Methodology Used",
       fieldValue:
         "Iterative Design Process — Multiple rounds of concepting, prototyping, and testing.",
-      image: "/assets/SweetScape/methodology.png",
     },
     {
       fieldName: "Location",
       fieldValue: "University of Toronto - Mississauga, ON, Canada",
-      image: "/assets/SweetScape/location.png",
     },
   ],
 };
@@ -304,7 +303,7 @@ const SweetScape = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[500px] object-contain"
                       />
                     </div>
 
@@ -354,7 +353,7 @@ const SweetScape = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[500px] object-contain"
                         />
                       </div>
 
