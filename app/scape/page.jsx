@@ -83,6 +83,7 @@ const process = {
       description:
         "The assets were imported into Unity, where I scripted interactive gameplay elements. Players collect floating toffees, navigate environmental barriers, and receive directional guidance from characters. Colliders, triggers, and movement logic were coded to ensure smooth and intuitive player interaction.",
       image: "/assets/SweetScape/gameplay.png",
+      video: "/assets/SweetScape/gameplay.mp4",
     },
     {
       num: "5.",
@@ -103,6 +104,7 @@ const features = {
       description:
         "Explore a fully realized dessert-themed island, where every step reveals larger-than-life treats, from floating donuts to chocolate syrup rivers, creating a feast for the senses.",
       image: "/assets/SweetScape/world.png",
+      video: "/assets/SweetScape/gameplay.mp4",
     },
     {
       num: "2.",
@@ -274,7 +276,7 @@ const SweetScape = () => {
                         alt={item.fieldName}
                         width={450}
                         height={400}
-                        className="rounded-lg"
+                        className="rounded-lg "
                       />
                     </div>
                   ))}
