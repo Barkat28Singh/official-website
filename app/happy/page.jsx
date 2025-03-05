@@ -69,6 +69,7 @@ const process = {
       description:
         "I sketched out six distinct scenes, mapping out the lyrics’ flow, character actions, and visual transitions. Using Adobe XD, I created wireframe animations to pre-visualize key scenes, experimenting with typographic placement, scale shifts, and color schemes.",
       image: "/assets/HappyLyricVideo/storyboard.png",
+      video: "/assets/HappyLyricVideo/storyboard.mp4",
     },
     {
       num: "3.",
@@ -89,7 +90,8 @@ const process = {
       step: "📼 Rendering & Final Touches",
       description:
         "The final video was exported using Adobe Media Encoder, ensuring optimal quality across platforms. Before submission, I conducted peer reviews and refined timing, color balance, and transitions to ensure seamless flow.",
-      image: "/assets/HappyLyricVideo/rendering.png",
+      image: "/assets/HappyLyricVideo/rendering.jpg",
+      video: "/assets/HappyLyricVideo/finalRender.mp4",
     },
   ],
 };
@@ -116,21 +118,22 @@ const features = {
       feature: "💫 Seamless Scene Transitions",
       description:
         "Scene transitions utilize creative wipes, zooms, and dynamic letter movements to maintain visual momentum without jarring cuts.",
-      image: "/assets/HappyLyricVideo/transitions.png",
+      image: "/assets/HappyLyricVideo/location.png",
     },
     {
       num: "4.",
       feature: "🎶 Music Synced Animation",
       description:
         "Every motion — from character movements to typographic shifts — is synchronized with the beat, ensuring the visual energy complements the musical flow.",
-      image: "/assets/HappyLyricVideo/syncedAnimation.png",
+      image: "/assets/HappyLyricVideo/methodology.png",
     },
     {
       num: "5.",
       feature: "📺 Platform-Optimized Export",
       description:
         "Final output was encoded with Adobe Media Encoder for optimal quality across YouTube, social platforms, and academic presentations.",
-      image: "/assets/HappyLyricVideo/finalRender.png",
+      image: "/assets/HappyLyricVideo/team.png",
+      video: "/assets/HappyLyricVideo/finalRender.mp4",
     },
   ],
 };
@@ -301,7 +304,7 @@ const Happy = () => {
                         alt={item.step || "Sweet Teeth Process Image"} // Fallback alt text
                         width={400}
                         height={200}
-                        className="rounded-lg h-[300px] object-cover"
+                        className="rounded-lg h-[350px] object-contain"
                       />
                     </div>
 
@@ -351,7 +354,7 @@ const Happy = () => {
                           alt={item.feature || "Sweet Teeth Feature Image"}
                           width={400}
                           height={200}
-                          className="rounded-lg h-[300px] object-cover"
+                          className="rounded-lg h-[350px] object-contain"
                         />
                       </div>
 
