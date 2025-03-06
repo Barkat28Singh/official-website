@@ -33,7 +33,7 @@ const motionprojs = [
     title: "Happy - Motion Design Lyric Video",
     description:
       "This lyric video for 'Happy' by Pharrell Williams combines bright, playful typography with dynamic motion graphics to amplify the song’s upbeat energy. Using Adobe Illustrator and Photoshop for asset creation, Adobe XD for initial frame designs, and After Effects for animation, the video features smooth text transitions, rhythmic animations synced to the music, and vibrant color schemes. It showcases my ability to blend typography, motion timing, and visual storytelling into an engaging experience.",
-    video: "/assets/Ads/happy.mp4",
+    video: "/assets/HappyLyricVideo/finalRender.mp4",
     icon: [
       <SiAdobeillustrator></SiAdobeillustrator>,
       <SiAdobexd></SiAdobexd>,
@@ -48,7 +48,7 @@ const motionprojs = [
     title: "Sweet Teeth - Motion Design Video Advertisement",
     description:
       "This animated ad for Sweet Teeth brings the candy store to life with playful animations, illustrated product showcases, and bouncy transitions. Created using Adobe Illustrator for custom candy illustrations and After Effects for animation, the video highlights key product categories, promotions, and branding. The motion design balances fun and clarity, ensuring the ad appeals to both children and adults while maintaining brand consistency.",
-    video: "/assets/Ads/stad.mp4",
+    video: "/assets/SweetTeeth/main comp 2.mp4",
     icon: [
       <SiAdobeillustrator></SiAdobeillustrator>,
       <SiAdobeaftereffects></SiAdobeaftereffects>,
@@ -62,7 +62,7 @@ const motionprojs = [
     title: "Heart of a Lion - Motion Design Action Video",
     description:
       "Heart of a Lion is a high-intensity action promo video combining bold kinetic typography with fast-cut visuals to create a powerful, adrenaline-pumping experience. Designed using Photoshop for background elements and After Effects for dynamic text animation and visual effects, the video embodies strength and determination. Each transition and effect was carefully synced to the soundtrack, amplifying the storytelling through motion design and cinematic pacing.",
-    video: "/assets/Ads/lion.mp4",
+    video: "/assets/Images/lion.mp4",
     icon: [
       <SiAdobeaftereffects></SiAdobeaftereffects>,
       <SiAdobephotoshop></SiAdobephotoshop>,
@@ -191,21 +191,20 @@ const Motionprojs = () => {
               className="zl:h[-520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {motionprojs.map((motionproj, index) => {
+              {motionprojs.map((item, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center">
-                      {/* overlay */}
-                      <div className="absolute top-0 left-0 w-full h-full bg-black/10 z-10"></div>
-
                       {/* video */}
                       <div className="relative w-full h-full">
                         <ReactPlayer
-                          url={motionproj.video}
+                          url={item.video}
                           controls
                           width="100%"
                           height="100%"
-                          style={{ objectFit: "contain" }}
+                          style={{
+                            pointerEvents: "auto",
+                          }}
                         />
                       </div>
                     </div>
